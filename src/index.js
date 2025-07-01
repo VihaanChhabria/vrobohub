@@ -9,6 +9,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("RoboHub API");
 });
+app.get('/ping', (req, res) => {
+  res.sendStatus(200);
+});
 
 app.use("/submit", submitRoute);
 // app.use('/validate', validateRoute);
