@@ -1,7 +1,11 @@
 import Ajv from "ajv";
-import matchSchema from "../schemas/matchSchema.json" assert { type: "json" };
+import fs from "fs";
 
 const ajv = new Ajv({ allErrors: true });
+
+const schemaPath = path.resolve("src/schemas/matchSchema.json");
+const matchSchema = JSON.parse(fs.readFileSync(schemaPath, "utf-8"));
+
 const validate = ajv.compile(matchSchema);
 
 export function validateMatchData(matchData) {
