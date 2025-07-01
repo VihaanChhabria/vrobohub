@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "event_key": { "type": "string" },
+    "match_number": { "type": "integer" },
+    "team_number": { "type": "integer" }
+  },
+  "required": ["event_key", "match_number", "team_number"],
+  "additionalProperties": false
+}
