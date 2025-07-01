@@ -1,6 +1,6 @@
 import express from "express";
 import submitRoute from "./routes/submit.js";
-// import validateRoute from './routes/validate.js';
+import validateRoute from './routes/validate.js';
 import matchesRoute from "./routes/matches.js";
 
 const app = express();
@@ -14,7 +14,7 @@ app.get('/ping', (req, res) => {
 });
 
 app.use("/submit", submitRoute);
-// app.use('/validate', validateRoute);
+app.use('/validate', validateRoute);
 app.use("/matches", matchesRoute);
 
 const port = process.env.PORT || 3000;
