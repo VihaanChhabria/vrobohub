@@ -1,0 +1,19 @@
+import express from "express";
+import submitRoute from "./routes/submit.js";
+// import validateRoute from './routes/validate.js';
+import matchesRoute from "./routes/matches.js";
+
+const app = express();
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("RoboHub API");
+});
+
+app.use("/submit", submitRoute);
+// app.use('/validate', validateRoute);
+app.use("/matches", matchesRoute);
+
+app.listen(3000, () =>
+  console.log(`🚀 Server running on http://localhost:3000`)
+);
