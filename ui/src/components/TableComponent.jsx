@@ -16,6 +16,7 @@ import { ArrowForward } from "@mui/icons-material";
 const TableComponent = ({
   tbaEventMatchesData,
   teamInfo,
+  scoutingData,
   selectedTeams,
   selectedMatches,
 }) => {
@@ -170,17 +171,62 @@ const TableComponent = ({
                 >
                   {row.blueScore}
                 </TableCell>
+
                 {/* Info */}
-                {/* Analysis */}
                 <TableCell
                   align="center"
                   sx={{ borderLeft: "2px solid #e0e0e0" }}
                 >
-                  <Tooltip title="test" arrow>
-                    <InfoOutlinedIcon
-                      sx={{ cursor: "pointer", color: "#757575" }}
-                    />
-                  </Tooltip>
+                  {(() => {
+                    // Find missing teams for this match
+                    const missingTeams = [];
+                    [...row.red, ...row.blue].forEach((team) => {
+                      const found = scoutingData.some((sd) => {
+                        if (sd.match_number == "qm1") {
+                          console.log(
+                            `Checking if ${sd.match_number} == ${
+                              row.match
+                            } and ${sd.team_number} == ${team}, ${
+                              sd.match_number == row.match &&
+                              sd.team_number.toString() == team
+                            }`
+                          );
+                        }
+                        return (
+                          sd.match_number == row.match &&
+                          sd.team_number.toString() == team
+                        );
+                      });
+                      if (!found) {
+                        missingTeams.push(team);
+                      }
+                    });
+
+                    const isFullyScouted = missingTeams.length === 0;
+                    
+                    const scoutedByTeams = Array.from(
+                      new Set(
+                      scoutingData
+                        .filter(sd => sd.match_number == row.match)
+                        .flatMap(sd => sd.scouted_by || [])
+                      )
+                    );
+
+                    const tooltipText = isFullyScouted
+                      ? `All teams in match scouted by ${scoutedByTeams.join(", ")}`
+                      : `Missing: ${missingTeams.join(", ")}`;
+
+                    return (
+                      <Tooltip title={tooltipText} arrow>
+                        <InfoOutlinedIcon
+                          sx={{
+                            cursor: "pointer",
+                            color: isFullyScouted ? "#757575" : "error.main",
+                          }}
+                        />
+                      </Tooltip>
+                    );
+                  })()}
                 </TableCell>
                 <TableCell
                   align="center"

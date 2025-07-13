@@ -1,0 +1,637 @@
+matchNumber,alliance,scouterInitials,selectTeam,startPoses0,startPoses1,startPoses2,startPoses3,startPoses4,startPoses5,autoCoralPlaceL1Count,autoCoralPlaceL2Count,autoCoralPlaceL3Count,autoCoralPlaceL4Count,autoCoralPlaceDropMissCount,autoCoralPickPreloadCount,autoCoralPickStationCount,autoCoralPickMark1Count,autoCoralPickMark2Count,autoCoralPickMark3Count,autoAlgaePlaceNetShot,autoAlgaePlaceProcessor,autoAlgaePlaceDropMiss,autoAlgaePickReefCount,autoAlgaePickMark1Count,autoAlgaePickMark2Count,autoAlgaePickMark3Count,autoPassedStartLine,teleopCoralPlaceL1Count,teleopCoralPlaceL2Count,teleopCoralPlaceL3Count,teleopCoralPlaceL4Count,teleopCoralPlaceDropMissCount,teleopCoralPickStationCount,teleopCoralPickCarpetCount,teleopAlgaePlaceNetShot,teleopAlgaePlaceProcessor,teleopAlgaePlaceDropMiss,teleopAlgaePickReefCount,teleopAlgaePickCarpetCount,shallowClimbAttempted,deepClimbAttempted,parkAttempted,climbFailed,playedDefense,brokeDown,comment
+35,blueAlliance,LB,1218,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,1,1,0,0,0,true,1,0,0,2,2,5,0,0,2,1,1,2,false,true,false,false,false,false,
+36,blueAlliance,LB,1089,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,5,1,0,11,0,0,0,2,2,0,false,true,false,false,false,false,
+37,blueAlliance,LB,1807,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,2,5,3,0,11,0,0,0,0,0,0,false,true,false,false,false,false,
+38,blueAlliance,LB,102,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,4,5,11,0,0,0,0,0,0,false,false,true,false,false,false,
+39,blueAlliance,LB,708,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,1,0,3,2,1,7,0,0,1,1,2,0,false,true,false,false,false,false,
+40,blueAlliance,WYYY,2720,false,false,false,false,true,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,1,2,5,0,0,0,0,0,0,false,true,false,false,false,false,
+41,blueAlliance,WYYY,2607,false,false,false,false,true,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,6,6,3,0,15,0,0,0,0,0,0,false,true,false,false,false,false,
+42,blueAlliance,WYYY,1218,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,5,3,0,11,0,0,0,0,0,0,false,true,false,false,false,false,
+43,blueAlliance,WYYY,365,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,7,2,2,12,0,0,0,5,5,0,false,true,false,false,false,false,
+44,blueAlliance,WYYY,56,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,7,0,7,0,0,0,2,2,0,false,false,true,false,false,false,
+45,blueAlliance,MTAT,3314,true,false,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,4,4,0,8,0,2,0,1,3,0,false,true,false,false,false,false,
+46,blueAlliance,MTAT,5401,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,9,1,0,6,4,false,false,true,false,false,false,THERE WASNT ANY ALGAE ON THE FIELD WHEN THEY WERE DONE IT WAS ALL ON THE BARGE😨
+48,blueAlliance,MTAT,11,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,2,0,2,0,false,false,true,false,true,false,coral got stuck in their bot
+47,blueAlliance,MTAT,6808,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,2,7,0,0,0,0,0,0,false,false,true,false,false,false,
+49,blueAlliance,JP,2590,false,true,false,false,false,false,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,2,3,1,6,1,13,0,0,0,0,0,0,false,true,false,false,false,false,"Difficulty scoring L4s, but they bounced into L1 luckily.  Overall solid robot"
+50,blueAlliance,EL,3142,false,false,false,false,true,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,3,1,5,0,1,10,0,0,0,0,0,0,false,true,false,false,false,false,
+51,blueAlliance,EL,316,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,1,4,1,10,0,4,1,0,3,2,false,false,true,false,false,false,
+52,blueAlliance,EL,25,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,5,0,1,10,0,0,0,1,1,0,false,false,false,false,false,false,
+53,blueAlliance,EL,1391,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,
+54,blueAlliance,EL,1676,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,7,3,1,12,0,0,0,1,1,0,false,false,true,false,false,false,
+55,blueAlliance,EL,11,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,9,0,0,6,3,false,true,false,false,false,false,
+56,blueAlliance,EL,9416,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,5,0,0,5,false,false,true,false,false,false,potentially tried to climb but took to long to hook up before lifting or could have just tried parking
+57,blueAlliance,WYYY,4342,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,1,1,2,0,false,false,false,false,true,false,Got stuck on a algae while playin defense 
+58,blueAlliance,WYYY,7045,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,fell over after getting coral stuck in them trying to play defense 
+59,blueAlliance,WYYY,4653,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,3,4,0,0,5,0,4,1,false,false,true,true,false,false,
+57,blueAlliance,WYYY,2554,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,5,4,0,4,13,0,0,0,2,2,0,false,false,true,false,false,false,
+60,blueAlliance,WYYY,1257,false,true,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,5,0,2,11,0,0,0,0,0,0,false,false,false,false,false,false,
+61,blueAlliance,WYYY,5684,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+62,blueAlliance,WYYY,1676,true,false,false,false,false,false,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,5,7,1,13,0,0,0,0,0,0,false,false,true,false,false,false,
+63,blueAlliance,WYYY,1712,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,2,0,0,2,false,true,false,false,true,false,the algae intake kind of looked broken
+64,blueAlliance,WYYY,2722,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,2,2,8,0,12,0,0,0,0,0,0,false,false,false,false,false,false,
+66,redAlliance,VA,1168,true,false,false,false,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,2,1,1,5,9,0,0,0,0,0,0,false,true,false,false,false,false,
+67,redAlliance,VA,4653,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,1,1,2,0,false,true,false,false,false,false,Took forever to grab algae then dropped it. Overall bad at handling.
+68,redAlliance,VA,1257,false,false,false,false,true,false,0,0,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,10,0,2,16,0,0,0,1,1,0,false,false,false,false,false,false,
+69,redAlliance,SM,293,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,7,4,0,13,0,0,0,0,0,0,true,false,false,false,false,false,
+71,redAlliance,SM,1640,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+71,redAlliance,SM,5992,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,2,0,0,6,7,15,0,0,0,0,0,0,false,false,true,false,false,false,
+72,redAlliance,SM,321,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,5,4,3,13,0,0,0,0,0,0,false,true,false,false,false,false,
+73,redAlliance,SM,1089,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,5,3,1,0,10,0,0,0,0,0,0,true,false,false,true,false,false,
+74,redAlliance,SM,102,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,1,3,4,2,11,0,0,0,0,0,0,false,false,true,false,false,false,
+76,redAlliance,SM,222,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,0,2,2,1,3,false,true,false,false,true,false,
+77,redAlliance,NP,5401,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,5,1,0,4,2,false,true,false,false,false,false,
+78,redAlliance,NP,365,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,7,4,3,0,15,0,0,0,0,0,0,false,true,false,false,false,false,
+79,redAlliance,NP,2458,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,janky driving
+80,redAlliance,NP,1676,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,4,3,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+81,redAlliance,NP,4653,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,2,3,3,1,10,0,0,0,0,0,0,false,true,false,false,false,false,
+82,redAlliance,NP,3314,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,2,2,1,7,0,0,0,0,0,0,false,true,false,false,false,false,
+83,redAlliance,NP,555,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,1,1,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+84,redAlliance,SM,834,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,3,4,0,10,0,0,0,0,0,0,true,false,false,false,false,false,
+85,redAlliance,SM,75,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,0,10,1,13,0,0,0,0,0,0,false,true,false,false,false,false,
+87,redAlliance,SM,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,5,0,10,0,1,3,0,3,1,false,true,false,false,false,false,
+88,redAlliance,SM,1676,false,true,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,0,6,0,1,1,0,1,1,true,false,false,false,false,false,
+89,redAlliance,SM,5895,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,1,0,5,1,8,0,0,3,0,2,1,false,true,false,false,false,false,
+90,redAlliance,SM,3637,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,0,3,2,9,0,0,0,0,0,0,true,false,false,false,false,false,
+91,redAlliance,SM,316,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,4,2,3,3,13,0,0,0,0,0,0,false,true,false,false,false,false,
+35,redAlliance,VA,9416,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,false,true,They broke down at the beginning of the match and didn't move the rest of the time.
+36,redAlliance,HM,2554,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,4,4,2,12,0,0,0,0,0,0,false,false,false,false,false,false,
+37,redAlliance,HM,272,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,true,0,1,1,2,2,6,0,2,2,0,4,0,false,true,false,false,false,false,
+38,redAlliance,HM,1391,false,false,false,true,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,5,0,1,2,2,10,0,0,0,1,1,0,false,false,true,false,false,false,
+39,redAlliance,HM,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,5,2,12,0,0,0,0,0,0,false,false,true,false,false,false,
+40,redAlliance,HM,2722,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,3,5,0,10,0,0,0,0,0,0,false,true,false,false,false,false,
+41,redAlliance,HM,4342,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,5,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+42,redAlliance,HM,321,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,5,1,8,0,0,0,0,0,0,false,false,true,false,false,false,
+43,redAlliance,HM,2539,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,4,1,8,0,0,0,0,0,0,false,false,true,false,false,false,
+44,redAlliance,HM,5684,false,true,false,false,false,false,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+46,redAlliance,HM,5684,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,7,1,2,1,11,0,0,0,1,1,0,false,true,false,false,false,false,reliable and very good at mid coral. A little bit slow tho. Very fast deep climb.
+47,redAlliance,SC,3637,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,4,9,0,0,0,0,0,0,false,false,false,true,false,false,"Not good at L1, takes some time to line up. "
+48,redAlliance,SC,1257,false,false,false,true,false,false,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,7,0,0,10,0,0,2,0,0,2,false,false,true,false,false,false,Very fast and reliable
+49,redAlliance,SC,5181,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,3,6,2,11,0,1,0,0,1,0,false,false,false,false,false,false,A little bit slow.
+50,redAlliance,SC,1811,true,false,false,false,false,false,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,3,0,7,0,0,10,0,0,0,0,0,0,false,false,false,false,false,false,Good but not too good. They were kinda slow.
+51,redAlliance,SC,293,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,2,4,2,0,2,10,0,0,0,0,0,0,false,false,false,true,false,false,Touching the ground in there hang. slow.
+52,redAlliance,SC,2458,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,2,0,0,2,false,false,false,false,true,false,can only do the professor.
+53,redAlliance,SC,10157,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+54,redAlliance,SC,5992,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,3,1,11,0,0,0,0,0,0,false,false,false,false,false,false,Didn't park
+55,redAlliance,SM,4361,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,0,2,0,2,5,0,0,0,0,0,0,true,false,false,false,false,false,
+56,redAlliance,SM,103,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,3,7,2,8,4,false,true,false,false,false,false,
+57,redAlliance,SM,2590,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,3,3,1,10,3,0,0,3,0,false,true,false,false,false,false,
+58,redAlliance,VA,3142,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,1,1,0,0,0,true,0,1,1,4,2,8,0,0,0,1,1,0,false,true,false,false,false,false,
+59,redAlliance,VA,7414,false,true,false,false,false,false,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,2,4,1,0,7,0,0,0,0,0,0,false,false,false,false,false,false,
+62,redAlliance,SM,1218,false,false,true,false,false,false,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,2,0,1,4,0,0,0,0,0,0,false,false,false,false,false,true,
+63,redAlliance,SM,4361,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,4,0,0,0,4,true,false,false,false,false,false,
+64,redAlliance,SM,4342,false,false,false,true,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,6,0,10,0,0,0,0,0,0,true,false,false,false,false,false,
+66,redAlliance,CM,9416,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,1,2,7,0,0,0,0,0,0,false,false,false,false,false,false,Didn't park
+67,redAlliance,CM,2590,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,4,2,2,11,0,0,1,0,0,1,false,true,false,false,false,false,
+68,redAlliance,CM,1218,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,7,2,10,0,0,0,0,0,0,false,true,false,false,false,false,
+69,redAlliance,CM,2458,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+70,redAlliance,CM,5181,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,4,2,2,10,0,0,0,0,0,0,false,false,true,false,false,false,Inconsistent L4.
+71,redAlliance,BE,272,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,0,3,7,0,1,1,0,2,0,false,true,false,false,false,false,
+72,redAlliance,BE,1712,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,true,0,0,0,1,0,1,0,0,4,0,2,2,false,true,false,false,false,false,
+73,redAlliance,BE,10157,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,
+74,redAlliance,BE,1807,false,false,false,false,true,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,4,5,2,13,0,0,0,0,0,0,false,false,true,true,false,false,
+75,redAlliance,BE,1403,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,2,2,4,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+76,redAlliance,BE,9015,false,true,false,false,false,false,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,true,4,4,0,5,1,14,0,0,0,0,0,0,false,false,false,false,false,false,
+77,redAlliance,DU,7414,false,false,true,false,false,false,0,2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,8,0,1,9,0,0,0,1,1,0,false,false,true,false,false,false,
+78,redAlliance,DU,5181,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,2,0,2,0,false,false,true,false,false,false,
+79,redAlliance,DU,484,true,false,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,6,3,4,1,14,0,0,0,0,0,0,false,true,false,false,false,false,
+80,redAlliance,DU,2607,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,5,6,2,0,14,0,0,0,1,1,0,false,true,false,false,false,false,
+81,redAlliance,DU,1391,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,2,0,9,0,1,0,0,1,0,false,true,false,false,false,false,Early hang
+82,redAlliance,DU,102,false,true,false,false,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,3,3,2,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+83,redAlliance,DU,2539,false,false,false,false,true,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,5,3,0,13,0,0,0,2,2,0,false,true,false,false,false,false,Very fast climb and fast robot in general.
+84,redAlliance,VA,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,8,0,2,6,false,false,true,true,false,false,
+84,redAlliance,VA,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,8,0,2,6,false,false,true,false,false,false,
+85,redAlliance,VA,5684,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,
+86,redAlliance,HM,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,3,0,6,0,0,0,0,0,0,false,false,true,false,false,false,
+87,redAlliance,HM,9015,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,5,6,0,15,0,0,0,0,0,0,false,false,false,false,false,false,
+88,redAlliance,HM,1168,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,0,4,0,0,0,0,0,0,false,true,false,false,false,false,
+89,redAlliance,HM,1218,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+90,redAlliance,HM,1403,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,1,4,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+91,redAlliance,AO,9094,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,1,0,1,2,0,2,0,0,2,0,false,true,false,false,true,false,Dropped coral into own bot
+35,blueAlliance,JP,9094,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,0,1,2,2,5,0,1,0,2,3,0,false,true,false,false,false,false,Slow and inaccurate
+36,blueAlliance,JP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,6,1,8,0,0,0,0,0,0,false,false,true,false,false,false,"Missed some that fell into L1, slow but can still fit in decent amount of L4s"
+37,blueAlliance,JP,56,true,false,false,false,false,false,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,2,2,5,0,0,0,0,0,0,true,false,false,true,false,false,Piece got stuck TWICE and I think the robot accidently took out a coral from the reef.  Slow and inaccurate
+38,blueAlliance,JP,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,2,3,3,2,10,0,0,1,0,1,0,false,false,true,false,false,false,Decent
+39,blueAlliance,JP,1257,false,false,false,true,false,false,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,true,0,2,3,0,1,6,0,0,1,0,1,0,false,false,false,false,false,false,"When they try to score in L2 and L3, the elevator keeps sliding down and they have to keep readjusting the height, greatly slowling down the scoring process."
+40,blueAlliance,JP,1811,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,2,2,0,2,6,0,0,0,3,3,0,false,false,false,false,false,false,"Slow shooting, can remove algae from reef but similar problem to what we (7414) used to have (algae removal is very slow)."
+41,blueAlliance,JP,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,2,0,5,0,1,1,2,4,0,false,true,false,false,false,false,"Nice job 222, a bit fumbly with the algae"
+42,blueAlliance,JP,1676,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,0,8,3,0,12,0,0,0,0,0,0,false,false,true,false,false,false,"Beast mode robot, scored lots of L4, great auton, scored many L3s"
+43,blueAlliance,JP,293,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,3,5,1,9,0,0,0,0,0,0,false,true,false,false,false,false,"Good auton, great scoring, nice 293"
+44,blueAlliance,JP,2458,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,Did some funny movements but did not contribute to the team at all.  I am confused.
+45,blueAlliance,JP,555,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,5,2,3,0,10,0,0,0,1,1,0,false,true,false,false,false,false,"Looked questionable at first with concerning auton, but can score fast on all levels and remove algae"
+46,blueAlliance,JP,1391,false,false,false,true,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,2,8,0,11,0,0,0,0,0,0,false,false,true,false,false,false,"Super fast scorer, reliable and accurate, great job"
+47,blueAlliance,JP,272,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,2,2,0,6,0,2,8,0,false,false,true,false,false,false,"Scored nice algae net shots, but shooting coral... wasn't its thing"
+48,blueAlliance,JP,2722,false,true,false,false,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,5,2,3,1,11,0,0,0,0,0,0,false,false,false,false,false,false,"Limited coral scoring b/c couldn't remove algae, opponent robot played defense against this one and slowed them down a decent amount."
+49,blueAlliance,JP,7414,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,true,Not Present
+50,blueAlliance,JP,5895,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,3,7,1,13,0,5,0,1,6,0,false,true,false,false,false,false,"Fast scorer in both algae and coral, great player"
+51,blueAlliance,JP,341,false,false,true,false,false,false,0,0,0,2,0,1,0,1,0,0,0,0,0,0,0,0,0,true,4,7,5,4,1,0,21,2,0,0,2,0,false,true,false,false,false,false,
+52,blueAlliance,JP,555,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,1,6,2,9,0,0,0,0,0,0,false,true,false,true,false,false,"They popped a ball by running over it lol, decent coral L4 scorer but missed occasionally"
+53,blueAlliance,JP,1403,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,1,6,2,9,0,0,0,1,1,0,false,false,false,false,false,false,"Good scorer, got defended hard by 10157"
+54,blueAlliance,JP,484,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,3,0,7,1,11,0,0,0,0,0,0,false,true,false,false,false,false,
+55,blueAlliance,JP,708,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,6,1,8,0,0,0,0,0,0,false,false,true,false,false,false,Piece got stuck in the beginning and they sure did take their time trying to get it out.
+56,blueAlliance,JP,102,false,false,false,true,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,2,2,6,3,13,0,0,0,0,0,0,false,false,false,false,false,false,
+57,blueAlliance,MTAT,4342,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,3,0,0,3,false,false,false,false,true,false,"went to red alliance, got stuck on algae"
+58,blueAlliance,MTAT,1640,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,2,0,2,3,3,10,0,0,1,0,1,0,false,false,true,false,false,false,oh my lordy they keep missing!
+59,blueAlliance,MTAT,2607,false,true,false,false,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,4,2,3,2,1,12,0,0,0,0,0,0,false,true,false,false,false,false,"Slow L1s, but they went faster for other levels, I dont get it."
+60,blueAlliance,MTAT,5181,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,0,3,2,7,0,1,1,0,2,0,false,false,true,false,false,false,
+61,blueAlliance,MTAT,321,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,3,5,1,9,0,0,0,0,0,0,false,false,true,false,false,false,
+62,blueAlliance,LB,272,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,8,0,1,6,3,false,true,false,false,false,false,
+63,blueAlliance,JP,341,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,6,5,6,5,0,22,0,0,0,0,0,0,false,true,false,true,false,false,"Climb didn't go high enough so it essentially turned into a park, otherwise daisy scored 22 coral."
+64,blueAlliance,JP,2554,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,2,1,1,7,0,0,0,1,1,0,false,false,false,false,false,false,Yuh mid
+66,redAlliance,DU,3142,false,false,true,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,2,2,0,7,0,0,3,0,3,0,false,true,false,false,false,false,
+67,redAlliance,DU,102,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,2,4,2,10,0,0,0,0,0,0,false,false,false,false,false,false,Didnt park
+68,redAlliance,DU,7414,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,0,0,3,3,0,false,false,false,false,true,false,
+69,redAlliance,DU,834,true,false,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,5,4,0,14,0,0,0,3,3,0,false,true,false,false,false,false,
+70,redAlliance,DU,5401,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,2,0,2,0,6,2,0,6,2,false,true,false,false,false,false,
+71,redAlliance,DU,103,false,true,false,false,false,false,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,2,2,0,5,0,4,0,0,2,2,false,true,false,false,false,false,
+72,redAlliance,DU,7045,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,0,5,0,0,0,0,0,0,false,false,true,false,true,false,
+73,redAlliance,DU,1391,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,5,6,1,1,13,0,0,0,2,2,0,false,true,false,false,false,false,
+74,redAlliance,DU,8513,false,true,false,false,false,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,0,1,2,2,2,7,0,0,3,0,3,0,false,true,false,false,false,false,
+76,redAlliance,DU,6808,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,4,1,11,0,0,0,0,0,0,false,true,false,false,false,false,
+77,redAlliance,CM,3637,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,0,6,0,0,0,0,0,0,false,false,false,false,false,true,
+78,redAlliance,CM,5895,false,false,false,true,false,false,1,0,0,3,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,0,6,6,0,12,0,5,0,0,5,0,false,true,false,false,false,false,
+79,redAlliance,CM,1923,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,6,2,0,13,0,0,2,1,3,0,false,false,true,false,false,false,
+80,redAlliance,CM,56,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,true,false,false,false,true,false,
+81,redAlliance,CM,341,false,true,false,false,false,false,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,true,5,3,3,4,0,15,0,0,0,0,0,0,false,true,false,false,false,false,
+82,redAlliance,CM,103,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,0,0,0,0,0,13,0,0,13,0,false,true,false,false,false,false,
+83,redAlliance,BE,4361,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,3,0,0,3,false,true,false,false,false,false,Driver is indescisive 
+84,redAlliance,BE,316,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,2,1,1,1,5,0,2,0,0,2,0,false,false,false,false,false,false,
+85,redAlliance,BE,1257,false,false,false,true,false,false,0,1,2,0,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,6,0,0,10,0,0,2,0,0,2,false,false,false,false,false,false,
+86,redAlliance,BE,293,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,1,2,5,0,0,0,0,0,0,false,true,false,false,false,false,
+87,redAlliance,BE,2590,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,3,3,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+88,redAlliance,BE,2720,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,4,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+89,redAlliance,BE,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,2,4,0,8,0,0,0,0,0,0,false,false,false,false,false,false,
+90,redAlliance,BE,4342,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,2,4,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+91,redAlliance,BE,321,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,2,3,5,14,0,0,0,0,0,0,false,true,false,false,false,false,inconsistent and missed many low shots
+35,redAlliance,CM,7414,false,false,false,true,false,false,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,1,1,0,0,0,0,0,0,false,false,true,false,false,false,Got coral stuck in system
+36,redAlliance,CM,4361,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,1,3,0,2,7,0,0,0,0,0,0,false,true,false,false,false,false,Climbed early
+37,redAlliance,CM,25,true,false,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,5,0,0,9,0,0,0,0,0,0,false,false,false,false,false,false,"Started inconsistent with feeding, can only really get fed by their only human player. Didn't park"
+38,redAlliance,CM,1168,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,2,0,3,4,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+39,redAlliance,CM,3142,false,true,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,1,3,4,5,1,14,0,0,0,0,0,0,false,true,false,false,false,false,Great midcoral bot
+40,redAlliance,CM,103,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,2,0,0,2,0,0,0,true,0,0,0,0,0,0,0,6,3,1,10,0,false,true,false,false,false,false,Goat algae
+41,redAlliance,CM,5992,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,1,1,4,0,6,0,0,0,0,0,0,false,false,false,false,false,false,
+42,redAlliance,BE,8513,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,2,2,8,0,0,0,0,0,0,false,true,false,false,false,false,
+43,redAlliance,BE,4373,false,true,false,false,false,false,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,true,0,4,0,2,0,6,0,0,0,0,0,0,false,false,true,false,false,false,
+44,redAlliance,BE,1923,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,4,2,1,8,0,2,1,0,3,0,false,false,false,false,false,false,
+45,redAlliance,BE,1168,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,1,3,3,1,9,0,0,0,0,0,0,false,true,false,false,false,false,
+46,redAlliance,CM,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,true,0,0,0,0,0,0,0,0,7,0,3,4,false,false,true,false,false,false,
+47,redAlliance,CM,9015,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,5,6,2,13,0,0,0,0,0,0,false,false,false,false,false,false,Didn't park
+48,redAlliance,CM,1807,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,4,8,0,13,0,0,0,0,0,0,false,true,false,false,false,false,Really fast cycles
+49,redAlliance,CM,103,true,false,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,3,4,0,6,1,0,7,0,false,false,false,false,false,false,Didn't park
+50,redAlliance,CM,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,3,0,10,0,0,0,0,0,0,false,false,true,false,false,false,
+51,redAlliance,CM,56,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,1,4,1,6,0,0,0,0,0,0,false,false,true,false,false,false,
+52,redAlliance,CM,321,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,1,4,2,10,0,0,0,0,0,0,false,true,false,true,false,false,
+53,redAlliance,CM,223,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,4,0,5,0,3,2,0,5,0,false,false,false,false,false,false,
+54,redAlliance,CM,3637,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,4,0,8,0,0,0,0,0,0,false,false,true,false,false,false,
+55,redAlliance,CM,3314,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,5,4,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+56,redAlliance,CM,1089,false,false,false,true,false,false,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,0,true,0,7,6,1,1,15,0,0,0,0,0,0,false,false,false,false,false,false,Very fast
+57,redAlliance,CM,10143,false,false,true,false,false,false,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,4,0,0,0,4,8,0,0,0,0,0,0,false,false,true,false,false,false,
+58,redAlliance,CM,1811,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,1,6,0,1,8,0,0,0,0,0,0,false,false,false,false,false,false,"Didn't park, targeted L3 the whole time"
+59,redAlliance,CM,6808,false,false,false,false,true,false,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,2,0,2,1,1,6,0,0,0,0,0,0,false,false,false,false,false,false,Didn't park
+60,redAlliance,CM,9015,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,3,3,4,2,2,14,0,0,0,0,0,0,false,true,false,false,false,false,
+61,redAlliance,CM,834,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,6,0,10,0,0,0,0,0,0,false,true,false,false,false,false,
+62,redAlliance,CM,3314,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,1,1,0,2,0,3,0,0,3,0,false,true,false,false,false,false,"Shooter broke, very versatile robot"
+63,redAlliance,CM,1089,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,4,1,2,11,0,0,0,1,1,0,false,false,true,false,false,false,
+64,redAlliance,CM,11,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,4,0,2,4,0,10,0,1,0,1,0,2,false,false,true,false,false,false,
+66,blueAlliance,LB,365,false,true,false,false,false,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,1,3,2,1,2,9,0,0,3,2,1,4,false,true,false,false,false,false,
+67,blueAlliance,LB,1807,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,6,4,0,12,0,0,0,1,1,0,false,true,false,true,false,false,
+68,blueAlliance,LB,2539,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,10,5,15,0,0,0,0,0,0,false,true,false,false,false,false,
+69,blueAlliance,LB,9094,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,1,0,3,2,6,0,0,0,3,3,0,false,true,false,false,false,false,
+70,blueAlliance,LB,1923,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,3,5,1,11,0,0,2,2,3,1,false,false,false,false,false,false,
+71,blueAlliance,LB,2554,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,3,1,11,0,0,0,0,0,0,false,false,false,false,false,false,
+72,blueAlliance,LB,9416,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,true,false,false,true,false,
+73,blueAlliance,LB,834,false,false,false,false,true,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,6,3,3,13,0,0,0,1,1,0,false,true,false,false,false,false,
+74,blueAlliance,LB,4653,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,2,2,6,0,0,0,0,0,0,false,true,false,true,false,false,
+75,blueAlliance,JP,3142,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,2,3,4,1,0,10,0,0,0,1,1,0,false,true,false,true,false,false,"Can uniquely score into L1 (not designed to), can remove algae and place coral at same time"
+76,blueAlliance,JP,11,true,false,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,1,0,5,0,2,2,1,4,1,false,true,false,false,false,false,
+77,blueAlliance,JP,293,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,8,0,8,0,0,0,0,0,0,false,true,false,false,false,false,"Initially some trouble lining up with human player station to acquire coral, consistent L4 but missed auton"
+78,blueAlliance,JP,5684,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,2,0,0,0,2,4,0,0,0,0,0,0,false,true,false,false,true,false,"Mid defense, missing L1 attempts (it looks like L1 is the only level they can score)"
+79,blueAlliance,JP,2720,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,1,3,0,5,0,0,0,0,0,0,false,true,false,true,false,false,"No time to climb, rather slow setting up coral placement on reef"
+80,blueAlliance,JP,2722,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,0,2,0,0,0,1,1,0,false,false,false,false,false,true,Unforatuntely stopped working
+81,blueAlliance,JP,1089,false,false,false,true,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,3,1,2,10,0,0,2,0,2,0,false,true,false,false,false,false,"Cool robot, not cool gameplay, bruh"
+82,blueAlliance,JP,4373,false,true,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,4,0,7,13,0,0,0,0,0,0,false,false,true,false,false,false,"Robot fumbled the bag hard, dropping and missing a lot of coral"
+83,blueAlliance,JP,10143,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,4,0,0,0,0,4,0,0,0,0,0,0,false,false,true,false,true,false,"Mediocre defense, only L4"
+84,blueAlliance,JP,8513,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,5,3,0,13,0,0,4,0,4,0,false,true,false,false,false,false,"Tried their best to carry the team, provided so much to the table."
+85,blueAlliance,JP,6808,true,false,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,3,0,3,0,0,0,0,0,0,false,false,true,false,false,false,"oof, probably the slowest coral scorer I've ever seen, the setup is inconsistent and takes a long time to get the coral actually in"
+86,blueAlliance,JP,484,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,6,5,1,12,0,0,0,0,0,0,false,false,true,false,false,false,Fast scoring
+87,blueAlliance,JP,5401,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,0,0,0,0,0,6,1,0,3,4,false,true,false,false,false,false,"Robot did a suplex on itself, while shooting algae into net, whole thing almost fell over"
+88,blueAlliance,JP,10157,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,"Defense beast, the best defense I've ever seen"
+89,blueAlliance,DP,2458,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,above average defence
+90,blueAlliance,LB,708,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,1,5,1,9,0,0,2,0,2,0,false,true,false,true,false,false,"tried to climb too late"
+91,blueAlliance,EL,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,7,2,5,4,false,true,false,false,false,false,
+92,blueAlliance,EL,75,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,5,3,9,0,0,1,0,1,0,false,true,false,false,false,false,
+93,blueAlliance,EL,555,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,3,7,0,0,0,1,1,0,false,true,false,false,true,true,"end effector broke half way through, then they played defence"
+94,blueAlliance,EL,365,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,3,4,8,17,0,0,0,2,2,0,false,true,false,false,false,false,
+35,redAlliance,DU,223,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,0,6,0,0,2,1,3,0,false,false,false,false,false,false,no park or hanging
+36,redAlliance,DU,293,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,3,1,6,0,0,0,0,0,0,false,true,false,false,false,false,Missed two feeds
+37,redAlliance,DU,1640,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,1,3,3,10,0,0,0,0,0,0,false,false,false,false,false,false,Many missed shots
+38,redAlliance,DU,555,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,5,1,0,10,0,0,0,1,1,0,false,true,false,true,false,false,"Ran over two balls and popped one, almost lost balance"
+39,redAlliance,DU,1712,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,true,0,0,0,0,0,0,0,0,9,2,2,9,false,true,false,false,false,false,Slow outtake into processor but consistent
+40,redAlliance,DU,834,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,6,3,0,13,0,0,0,0,0,0,false,false,true,true,false,false,Started climb at 15 seconds and still failed
+41,redAlliance,DU,341,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,1,7,5,3,1,7,10,0,0,0,0,0,false,true,false,false,false,false,Incredibly fast.
+42,redAlliance,DU,75,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,1,2,6,0,0,3,0,2,1,false,true,false,false,false,false,
+43,redAlliance,DU,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,3,0,7,0,0,0,0,0,0,false,false,true,false,false,false,
+44,redAlliance,DU,4361,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,2,1,0,2,0,5,0,0,2,0,0,2,false,true,false,false,false,false,
+45,redAlliance,DU,4653,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,2,1,5,0,0,2,0,2,0,false,true,false,false,false,false,
+46,redAlliance,DU,2554,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,3,3,2,8,0,0,0,0,0,0,false,false,false,false,false,true,Stopped moving around 30 second mark
+47,redAlliance,DU,9416,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,2,1,0,3,false,false,true,false,false,false,Played defense?
+48,redAlliance,DU,7045,false,false,true,false,false,false,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,
+49,redAlliance,DU,10143,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,6,0,0,0,3,9,0,0,0,0,0,0,false,false,false,false,false,false,
+50,redAlliance,DU,9094,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,4,1,9,0,1,0,1,2,0,false,true,false,false,false,false,"Picked up algae and coral at same time, ran over and popped a ball, risky net shot"
+51,redAlliance,BE,5684,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,3,0,0,0,3,6,0,0,0,0,0,0,false,false,false,false,false,false,
+52,redAlliance,BE,222,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,4,1,1,1,8,0,0,0,0,0,0,false,false,false,true,false,false,
+53,redAlliance,BE,2539,false,false,false,true,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,3,6,9,0,0,0,0,0,0,false,true,false,false,false,false,
+54,redAlliance,BE,834,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,1,1,2,4,1,9,0,0,0,0,0,0,false,true,false,false,false,false,
+55,redAlliance,BE,272,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,true,0,0,0,0,1,1,0,7,0,0,1,6,false,true,false,false,false,false,
+56,redAlliance,BE,5401,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,2,6,1,9,0,0,0,0,0,0,false,false,true,true,false,false,
+57,redAlliance,DU,1168,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,1,2,1,7,0,0,0,0,0,0,false,false,true,false,false,false,
+58,redAlliance,DU,8513,false,true,false,false,false,false,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,0,true,0,0,2,5,0,7,0,0,0,3,3,0,false,true,false,false,false,false,Got stuck on ball for a bit then was helped off of it
+59,redAlliance,DU,2495,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,2,0,7,1,10,0,0,0,0,0,0,false,false,false,false,false,false,didn't go for park
+60,redAlliance,DU,1807,false,false,true,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,7,2,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+61,redAlliance,DU,10157,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+62,redAlliance,BE,484,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,4,5,2,12,0,0,0,0,0,0,false,false,true,false,false,false,
+63,redAlliance,BE,5992,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,2,2,5,0,0,0,0,0,0,false,false,true,false,false,false,
+64,redAlliance,BE,4373,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,2,4,1,0,7,0,0,0,0,0,0,false,false,false,false,false,false,
+65,blueAlliance,WYYY,555,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,3,1,4,13,0,0,0,0,0,0,false,false,false,false,false,false,
+66,blueAlliance,WYYY,8513,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,4,3,1,10,0,0,0,0,0,0,false,false,false,false,false,false,
+65,blueAlliance,WYYY,9416,true,false,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,5,0,0,5,false,true,false,false,false,false,
+67,blueAlliance,MTAT,3637,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,1,2,2,1,7,0,0,0,0,0,0,false,false,true,false,false,false,
+68,blueAlliance,WYYY,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,1,0,0,1,0,3,1,3,1,6,false,true,false,false,false,false,
+69,blueAlliance,WYYY,9015,false,true,false,false,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,2,1,6,4,1,14,0,0,0,0,0,0,false,false,false,false,false,false,
+70,blueAlliance,WYYY,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,2,2,1,9,0,0,0,1,1,0,false,false,true,false,false,false,
+71,blueAlliance,WYYY,223,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,4,2,2,2,6,false,false,false,false,false,false,
+72,blueAlliance,WYYY,10143,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,8,0,0,0,1,9,0,0,0,0,0,0,false,false,true,false,false,false,
+73,blueAlliance,WYYY,4342,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,0,4,0,5,0,0,0,2,2,0,false,true,false,false,false,false,
+74,blueAlliance,WYYY,4361,true,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,0,3,5,0,0,2,0,0,2,false,true,false,false,false,false,
+75,blueAlliance,WYYY,316,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,3,4,1,2,0,10,0,3,0,0,1,2,false,false,false,false,false,false,
+76,blueAlliance,LB,2539,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,5,3,4,2,14,0,0,0,0,0,0,false,true,false,false,false,false,
+77,blueAlliance,LB,1257,false,false,false,true,false,false,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,10,0,1,13,0,0,2,1,1,2,false,false,false,false,false,false,
+78,blueAlliance,LB,1640,false,false,false,true,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,0,5,2,2,9,0,0,2,1,3,0,false,true,false,true,false,false,too slow to line up
+79,blueAlliance,LB,708,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,true,0,4,1,1,1,7,0,0,2,0,2,0,false,true,false,false,false,false,
+80,blueAlliance,LB,1811,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,0,1,8,0,0,0,3,3,0,false,false,true,false,false,false,
+81,blueAlliance,LB,321,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,5,3,10,0,0,0,0,0,0,false,true,false,false,false,false,
+82,blueAlliance,LB,3142,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,5,5,1,12,0,0,0,0,0,0,false,true,false,false,false,false,
+83,blueAlliance,LB,223,true,false,false,false,false,false,1,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,1,3,0,8,0,1,3,6,false,false,false,false,false,false,
+84,blueAlliance,LB,7414,false,false,true,false,false,false,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,0,1,0,0,0,2,2,0,false,false,true,false,false,false,
+85,blueAlliance,LB,5992,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,3,6,2,0,12,0,0,0,1,1,0,false,false,false,false,false,false,
+86,blueAlliance,LB,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,3,3,0,6,0,3,0,1,3,1,false,false,false,false,false,false,
+87,blueAlliance,LB,365,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,6,7,5,1,19,0,0,0,0,0,0,false,true,false,false,false,false,
+88,blueAlliance,LB,7045,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,1,3,0,0,0,1,1,0,false,false,true,false,true,false,
+89,blueAlliance,LB,1807,false,false,false,false,true,false,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,0,5,0,0,0,0,0,0,false,false,false,false,false,true,
+90,blueAlliance,LB,1811,false,false,true,false,false,false,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,3,8,0,0,11,0,0,0,1,1,0,false,false,false,false,false,false,
+91,blueAlliance,LB,4361,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,2,1,4,4,11,0,0,0,0,0,0,false,true,false,false,false,false,
+92,blueAlliance,LB,2554,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,4,1,1,8,0,0,1,2,3,0,false,false,false,false,false,false,
+93,blueAlliance,LB,272,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,true,1,0,0,1,1,3,0,7,0,0,7,0,false,true,false,false,false,false,
+94,blueAlliance,LB,4653,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,2,2,0,false,false,true,false,false,false,
+35,blueAlliance,DP,484,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,3,2,3,12,0,0,0,0,0,0,false,false,false,false,false,false,solid performance
+36,blueAlliance,DP,5684,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,8,0,0,0,1,9,0,0,0,0,0,0,false,false,true,true,false,false,Scored L 1 the entire time missed a few but did somewhat well
+37,blueAlliance,DP,1403,false,true,false,false,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,1,1,0,6,1,9,0,0,1,0,1,0,false,false,false,false,false,false,average performance didn't attempt climb
+38,blueAlliance,DP,11,true,false,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,1,7,0,4,0,0,3,1,false,true,false,false,false,false,got a peice stuck kept on scoreing
+39,blueAlliance,DP,9015,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,2,5,2,13,0,0,0,0,0,0,false,false,true,false,false,false,never initiated the climb and had some accuracy issues but did well overall
+40,blueAlliance,DP,3637,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,2,6,0,11,0,0,0,0,0,0,false,true,false,false,false,false,literally perfect preformance
+41,blueAlliance,DP,316,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,1,2,0,5,0,3,0,4,3,4,false,false,true,false,false,false,had issues dropping algae when stopping but cycled fast
+42,blueAlliance,DP,223,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,7,0,2,5,4,false,true,false,false,false,false,has L4 scoreing capabilities but cycled algae net shots the whole game which worked out in their favor
+43,blueAlliance,DP,10157,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,1,1,0,0,0,0,0,0,false,false,false,false,true,true,missed all their L1 shots and then played really good defence
+44,blueAlliance,DP,25,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,7,0,1,10,0,0,0,0,0,0,false,false,false,false,false,false,overall slow but very consistant missed one at the very end
+45,blueAlliance,DP,1403,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,4,3,0,8,0,0,0,1,0,1,false,false,false,false,false,false,didn't park or climb and took a while to cycle 
+46,blueAlliance,DP,102,false,true,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,1,6,9,0,0,0,0,0,0,false,false,false,false,false,false,massive intakeing and accuracy issues leading to slow inaccurate cycle times
+47,blueAlliance,DP,834,false,true,false,false,false,false,0,0,0,3,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,5,1,7,0,0,0,0,0,0,false,false,true,false,false,false,Very consistant but takes a while to align itself which slows it down
+48,blueAlliance,DP,1089,false,false,false,true,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,2,1,2,7,0,0,0,0,0,0,false,true,false,false,false,false,removed all the algae off the reef but didn't score any of it and also had issues with scoring in level 4
+49,blueAlliance,DP,1640,false,false,false,true,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,3,2,3,2,1,11,0,0,2,0,2,0,false,true,false,false,false,false,Fast cycling as well as algae scoring capabilities
+50,blueAlliance,DP,2720,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,3,2,0,0,0,5,0,0,0,0,0,0,false,true,false,false,false,false,Something went wrong with their elevator so they scored in level 1 and 2 the entire match and somehow didn't manage to miss once (pure luck)
+51,blueAlliance,DP,4373,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,2,3,0,0,0,0,0,0,false,false,true,true,true,false,got a peice stuck in the bellypan after missing half their shots and then played defence
+52,blueAlliance,DP,365,false,true,false,false,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,5,2,1,10,0,0,2,1,2,1,false,true,false,false,false,false,has difficulty's picking up algae from the carpet but otherwise is fast and efficient in the rest of their scoring capabilities
+53,blueAlliance,DP,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,0,8,0,3,5,false,true,false,false,false,false,had immense difficulties getting algae off level 1 but otherwise cycled algae very well
+54,blueAlliance,DP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,0,2,6,0,0,0,0,0,0,false,true,false,false,false,false,
+55,blueAlliance,DP,75,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,0,0,0,0,false,false,false,false,true,true,elevator got bent and had to play defence for the rest of the game
+56,blueAlliance,DP,2722,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,4,4,1,3,13,0,0,0,0,0,0,false,false,true,false,false,false,nothing significant to say
+57,blueAlliance,DP,5895,false,false,false,true,false,false,1,0,0,3,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,0,7,8,1,16,0,4,0,1,5,0,false,true,false,false,false,false,extremely good prefromance
+58,blueAlliance,DP,9094,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,5,1,10,0,1,0,1,2,0,false,true,false,false,false,false,had some accuracy issues with both L4 scoring and net shots but did well for the most part
+59,blueAlliance,DP,1923,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,4,0,10,0,2,0,0,2,0,false,false,false,false,false,false,did very well with cycling with minimal misses did not attempt to park
+60,blueAlliance,DP,2720,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,3,1,1,2,1,8,0,0,0,0,0,0,false,false,false,true,false,false,very slow capabilities at lower levels but alright at level 4
+61,blueAlliance,DP,223,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,5,0,0,4,1,false,false,false,false,false,false,long cycle times for level 4 and ignores algae that's right there
+62,blueAlliance,DP,1391,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,4,1,9,0,0,0,0,0,0,false,true,false,false,false,false,did serviceable
+63,blueAlliance,DP,103,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,true,0,3,0,0,3,6,0,6,0,0,6,0,false,false,false,false,false,false,not very good a shooting coral but very efficient at net shots did not attempt climb
+64,blueAlliance,DP,10143,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,6,0,0,0,3,9,0,0,0,0,0,0,false,false,true,false,true,false,kit-bot shenanigans
+65,blueAlliance,DP,7045,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,2,3,6,0,0,0,0,0,0,false,false,false,false,false,false,inconsistant
+66,blueAlliance,DP,193,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,5,2,0,7,0,0,0,0,0,0,false,false,true,false,false,false,consistent but slow knocked off the coral for their teammates 
+67,blueAlliance,DP,75,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,1,2,2,7,0,0,1,1,1,1,false,false,true,false,false,false,took a long time to cycle and couldent connect to the cage 
+68,blueAlliance,DP,1811,true,false,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,8,0,1,10,0,0,0,0,0,0,false,false,true,false,false,false,very consistent and fast also removed a lot of their teams algae didnt park
+69,blueAlliance,DP,56,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,0,3,1,7,0,0,0,0,0,0,true,false,false,false,false,false,very slow cycle time also occasionally misses
+70,blueAlliance,DP,2720,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,1,2,6,0,0,0,0,0,0,false,false,true,false,false,false,very slow cycle time and also inaccurate
+71,blueAlliance,DP,341,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,6,6,6,0,18,0,4,0,0,4,0,false,true,false,false,false,false,extremely fast cycling and didn't miss a single coral
+72,blueAlliance,DP,3314,false,true,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,5,0,9,0,4,0,1,5,0,false,true,false,false,false,false,did very well
+73,blueAlliance,DP,555,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,5,2,0,11,0,0,0,0,0,0,false,false,false,false,false,false,got stuck on a algae at the end but also got held back by defence otherwise average preformance
+74,blueAlliance,DP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,7,1,8,0,0,0,0,0,0,false,false,true,true,false,false,had perfect aim with level 4 shots only missed a attempted level 1 at the end didn't pull itself high enough at the end
+75,blueAlliance,DP,1218,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,3,5,4,0,13,0,0,0,0,0,0,false,true,false,false,false,false,very good all around preformance
+76,blueAlliance,DP,9094,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,3,3,3,9,0,1,0,0,1,0,false,false,true,true,false,false,did well but had some accuracy issues
+77,blueAlliance,DP,25,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,0,0,2,0,0,0,0,0,0,false,true,false,false,false,false,extremely slow and bad at cycling coral
+78,blueAlliance,DP,2495,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,3,0,3,1,7,0,0,0,0,0,0,false,false,false,false,false,false,didn't park clumsy driving and inconsistent accuracy
+79,blueAlliance,DP,2590,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,5,1,11,0,0,0,0,0,0,false,true,false,false,false,false,had issues with accuracy but other than that nothing notable
+80,blueAlliance,DP,1168,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,1,5,1,8,0,0,0,0,0,0,false,true,false,false,false,false,solid performance all around nothing notable
+81,blueAlliance,DP,2554,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,1,0,1,0,false,false,true,false,true,false,serviceable defense notihing speical
+82,blueAlliance,DP,272,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,true,1,0,0,1,2,4,0,3,2,2,3,4,false,true,false,false,false,false,accuracy problems
+83,blueAlliance,DP,9094,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,5,6,0,11,0,0,0,0,0,0,false,true,false,false,false,false,nothing notable to say other than they did well with minimal misses
+84,blueAlliance,DP,25,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,0,1,0,0,0,0,0,0,false,false,true,false,false,true,broke down almost immedietly and came back to score 1 L3 shot and parked
+85,blueAlliance,DP,1640,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,2,2,2,1,8,0,0,2,0,2,0,false,true,false,false,false,false,solid preformance
+86,blueAlliance,DP,9416,true,false,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,3,0,3,false,false,false,true,true,false,mid
+87,blueAlliance,DP,56,true,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,1,1,4,2,8,0,0,0,0,0,0,false,false,false,false,false,true,broke down at the beginning and then came back to life a quarter in
+88,blueAlliance,DP,1923,false,true,false,false,false,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,0,5,6,3,0,14,0,0,2,0,2,0,false,false,false,false,false,false,very good preformance
+89,blueAlliance,DP,2722,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,5,0,4,10,0,0,0,0,0,0,false,false,false,false,false,false,gigantic accuracy issues
+90,blueAlliance,DP,2607,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,3,6,4,2,1,16,0,0,0,0,0,0,false,false,true,false,false,false,didn't have enought time to climb but was extremely fast at cycling coral to different levels and extremely consistent even at level 1
+91,blueAlliance,DP,4373,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,3,0,0,0,3,6,0,0,0,0,0,0,false,false,false,false,true,false,ngl I have no idea what the thought process was 
+92,blueAlliance,DP,2539,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,8,1,2,2,13,0,0,0,0,0,0,false,true,false,false,false,false,good preformance
+93,blueAlliance,DP,1257,false,false,false,true,false,false,0,1,2,0,0,1,2,0,0,0,0,0,0,0,0,0,0,true,2,4,10,0,1,17,0,0,0,0,0,0,false,false,false,false,false,false,very fast coral cycling
+94,blueAlliance,DP,1089,false,false,false,true,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,5,7,1,1,14,0,0,0,0,0,0,false,false,false,false,false,false,did well
+1,blueAlliance,MTAT,2607,false,false,false,false,true,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,4,1,2,6,0,13,0,0,0,0,0,0,false,true,false,false,false,false,
+2,blueAlliance,MTAT,3637,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,2,3,3,10,0,0,0,0,0,0,false,false,true,false,false,false,started climing a little early but didnt really work
+3,blueAlliance,MTAT,1257,false,false,false,false,true,false,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,6,9,0,0,15,0,0,0,0,0,0,false,false,false,false,false,false,very fast
+4,blueAlliance,MTAT,484,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,10,1,11,0,0,0,0,0,0,false,false,true,false,false,false,got stuck on algae for a hot second
+5,blueAlliance,WYYY,56,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,true,false,true,true,false,
+6,blueAlliance,MTAT,75,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,1,4,0,1,7,0,0,0,0,0,0,false,false,false,false,false,false,it seems like they need to align a specific way at the coral station before they intake
+7,blueAlliance,MTAT,293,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,1,3,0,8,0,0,0,0,0,0,false,false,true,false,false,false,"tried climbing at 23 seconds, couldnt get it"
+8,blueAlliance,MTAT,10143,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,"tried playing defense, was too light, got stuck on algae☹"
+8,blueAlliance,MTAT,10143,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,"kitbot, played defense, too light got kicked, and got stuck on algae (this might be my 2nd entry)"
+9,blueAlliance,MTAT,2554,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,4,0,1,7,0,0,2,0,0,2,false,false,false,false,false,false,
+10,blueAlliance,LB,103,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,2,0,0,2,0,0,0,true,2,0,0,0,2,4,0,5,3,0,6,2,false,false,true,false,false,false,
+11,blueAlliance,LB,484,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,6,4,3,14,0,0,0,1,1,0,false,false,true,false,false,false,
+12,blueAlliance,LB,9094,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,1,3,0,1,5,0,5,0,0,5,0,false,true,false,false,false,false,
+13,blueAlliance,LB,102,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,6,2,3,11,0,0,0,0,0,0,false,false,false,false,false,false,
+14,blueAlliance,WYYY,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,4,3,8,0,0,0,0,0,0,false,false,false,false,false,false,
+15,blueAlliance,WYYY,1089,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,4,2,2,9,0,0,0,0,0,0,false,true,false,false,false,false,
+16,blueAlliance,WYYY,2554,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,2,0,3,0,0,1,0,1,0,false,false,false,false,false,false,
+17,blueAlliance,WYYY,2720,false,false,false,false,true,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,3,7,0,0,0,0,0,0,false,true,false,false,false,false,
+18,blueAlliance,WYYY,5895,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,0,3,6,0,10,0,6,0,0,4,2,false,true,false,true,false,false,go but failed climb from back drive and such
+19,blueAlliance,WYYY,293,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,3,1,7,0,0,0,0,0,0,false,true,false,false,false,false,
+20,blueAlliance,WYYY,9015,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,true,"drive was not working, only saw the elevator raise and lower. "
+21,blueAlliance,WYYY,341,false,true,false,false,false,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,2,6,6,1,0,1,14,0,1,1,1,1,false,true,false,false,false,false,
+22,blueAlliance,WYYY,75,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,1,2,4,7,0,0,0,1,1,0,false,true,false,false,false,false,
+23,blueAlliance,WYYY,3314,true,false,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,1,0,7,0,6,0,0,6,0,false,true,false,false,false,false,
+24,blueAlliance,EL,222,false,false,false,false,true,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,7,2,11,0,0,0,0,0,0,false,true,false,false,false,false,
+25,blueAlliance,EL,5895,false,true,false,false,false,false,0,0,0,4,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,3,4,3,1,11,0,7,0,0,4,3,false,true,false,false,false,false,
+26,blueAlliance,EL,321,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,5,3,1,10,0,0,0,0,0,0,false,true,false,true,false,false,
+27,blueAlliance,EL,1403,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,7,1,14,0,0,0,2,2,0,false,true,false,false,false,false,
+28,blueAlliance,EL,4361,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,1,6,0,0,0,0,0,0,false,true,false,false,false,false,
+29,blueAlliance,EL,1168,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,5,2,11,0,0,0,0,0,0,false,true,false,false,false,false,
+30,blueAlliance,EL,2722,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,5,3,1,11,0,0,0,1,1,0,false,false,false,false,false,false,
+31,blueAlliance,EL,1676,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,1,4,1,9,0,0,1,1,2,0,false,true,false,true,false,false,
+32,blueAlliance,EL,2458,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+33,blueAlliance,EL,222,true,false,false,false,false,false,0,0,0,1,3,1,3,0,0,0,0,0,0,0,0,0,0,true,0,2,4,2,2,10,0,0,0,0,0,0,false,false,false,false,false,false,
+34,blueAlliance,VC,1923,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,2,1,1,7,0,0,2,2,2,2,false,false,true,false,false,false,Got pen for more than 1 coral
+2,redAlliance,SM,9094,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,true,0,0,3,3,1,7,0,0,0,1,1,0,true,false,false,false,false,false,
+3,redAlliance,SM,223,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,1,1,2,4,0,0,5,0,3,2,false,false,true,false,false,false,
+4,redAlliance,SM,7045,false,false,true,false,false,false,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,0,7,8,0,0,0,3,3,0,false,false,true,false,false,false,
+5,redAlliance,SM,10157,false,false,false,true,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+6,redAlliance,SM,1811,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,1,3,0,3,8,0,0,0,0,0,0,false,false,true,false,false,false,
+7,redAlliance,SM,3142,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,2,6,2,11,0,0,0,0,0,0,false,false,true,false,false,false,
+8,redAlliance,SM,1403,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,3,5,2,0,11,0,0,0,0,0,0,false,false,true,false,false,false,
+9,redAlliance,SM,2722,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,3,3,5,2,13,0,0,0,1,1,0,false,false,true,false,false,false,
+10,redAlliance,SM,5684,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,1,1,0,0,0,0,0,0,false,true,false,false,false,false,
+11,redAlliance,SM,1923,false,false,false,false,true,false,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,1,5,0,1,0,1,2,0,false,false,true,false,false,false,
+12,redAlliance,SM,2539,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,6,6,3,1,1,17,0,0,0,0,0,0,true,false,false,false,false,false,
+13,redAlliance,SM,4342,false,false,false,true,false,false,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,5,2,0,8,0,0,0,2,1,1,true,false,false,false,false,false,
+14,redAlliance,SM,25,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,0,1,8,0,0,0,0,0,0,false,false,true,false,false,false,
+15,redAlliance,SM,1676,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,3,1,8,0,0,0,0,0,0,true,false,false,false,false,false,
+16,redAlliance,SM,1811,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,6,0,0,6,0,0,0,0,0,0,false,false,true,false,false,false,
+17,redAlliance,SC,272,false,false,false,false,true,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,5,5,0,3,2,1,6,0,false,false,true,false,false,false,Missed absolutly every shot. Slow
+18,redAlliance,SC,1218,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,4,2,0,10,0,0,2,0,0,2,false,false,false,false,false,true,Code crashed at the end of the match. Very consitant.
+19,redAlliance,SC,1640,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,5,11,0,0,0,0,0,0,false,false,false,false,false,false,SLow and not very reliable.
+20,redAlliance,SC,555,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,4,5,1,13,0,0,0,0,0,0,false,true,false,false,false,false,Fast and very reliable.
+21,redAlliance,SM,5181,false,false,true,false,false,false,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,3,2,1,1,8,0,0,0,0,0,0,false,false,true,false,false,false,
+22,redAlliance,SM,5401,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,1,7,0,8,0,0,2,0,2,0,false,false,true,false,false,false,
+23,redAlliance,SM,316,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+24,redAlliance,SM,2607,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,2,6,3,0,12,0,0,0,0,0,0,false,true,false,false,false,false,
+25,redAlliance,SM,1089,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+25,redAlliance,SM,1089,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,3,4,3,0,11,0,0,0,0,0,0,false,false,true,false,false,false,
+26,redAlliance,SM,193,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,5,1,8,0,0,0,0,0,0,true,false,false,false,false,false,
+27,redAlliance,SM,2554,false,true,false,false,false,false,0,1,0,3,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,1,4,1,3,9,0,0,0,1,1,0,false,false,true,false,false,false,
+28,redAlliance,SM,2720,false,false,false,true,false,false,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+29,redAlliance,SM,1391,false,false,false,true,false,false,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,true,0,4,1,4,0,9,0,0,0,0,0,0,false,false,true,false,false,false,
+30,redAlliance,SM,3637,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,4,0,7,0,0,0,0,0,0,false,true,false,false,false,false,
+31,redAlliance,SM,6808,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,4,2,7,0,0,0,0,0,0,false,false,true,false,false,false,
+32,redAlliance,SM,10157,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,
+33,redAlliance,SM,4653,false,true,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,4,1,9,0,0,0,1,1,0,false,false,true,false,false,false,
+34,redAlliance,SM,365,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+2,redAlliance,NP,1089,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,2,1,9,0,0,0,0,0,0,false,true,false,false,false,false,
+3,redAlliance,NP,2458,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,1,5,0,6,false,false,true,false,false,false,trouble picking up and moving the ball
+4,redAlliance,NP,316,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,1,0,10,0,12,0,0,0,0,0,0,false,false,true,false,false,false,
+5,redAlliance,NP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,0,4,0,0,0,0,0,0,false,true,false,false,false,false,slow cycle time
+6,redAlliance,NP,1640,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,2,4,2,12,0,0,0,0,0,0,false,true,false,false,false,false,
+7,redAlliance,NP,11,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,shot dead in the bronx
+8,redAlliance,NP,365,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,0,6,2,9,0,0,0,0,0,0,false,true,false,false,false,false,
+9,redAlliance,NP,2720,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,2,1,8,0,0,0,0,0,0,false,true,false,false,false,false,
+10,redAlliance,NP,9015,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,1,2,0,0,0,0,0,0,false,false,true,false,true,true,"ele broke, then drives broke"
+11,redAlliance,NP,1257,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,0,0,0,3,0,0,1,0,0,1,false,false,false,false,false,false,
+12,redAlliance,NP,5401,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,2,2,2,2,0,8,0,3,0,0,3,0,false,true,false,false,false,false,
+13,redAlliance,NP,56,true,false,false,false,false,false,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,false,0,1,1,2,0,4,0,0,0,0,0,0,false,false,false,true,false,false,
+14,redAlliance,NP,341,false,true,false,false,false,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,0,3,2,4,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+15,redAlliance,NP,2458,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,true,stalled multiple times
+16,redAlliance,NP,10157,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,robot didn't pull up
+17,redAlliance,NP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,2,6,0,0,0,0,0,0,false,true,false,false,false,false,
+18,redAlliance,NP,3637,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,3,4,2,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+19,redAlliance,NP,708,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,0,2,0,0,0,0,0,0,false,false,false,false,false,true,slowed down and stopped
+20,redAlliance,NP,2722,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,2,2,4,0,9,0,0,0,0,0,0,false,false,true,false,false,false,
+21,redAlliance,NP,6808,true,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,1,3,0,4,0,0,0,0,0,0,false,false,true,true,false,false,
+22,redAlliance,NP,4373,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,2,3,3,0,8,0,0,0,0,0,0,false,false,true,true,false,false,
+23,redAlliance,NP,365,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,3,3,3,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+25,redAlliance,NP,1257,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,3,3,3,10,0,0,0,0,0,0,false,false,false,false,false,false,
+26,redAlliance,VA,11,false,false,false,false,true,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,2,2,1,8,0,2,2,1,5,0,false,true,false,false,false,false,Triple climb
+27,redAlliance,VA,5992,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,4,0,3,7,0,0,0,0,0,0,false,false,true,false,false,false,
+28,redAlliance,NP,9416,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,2,0,0,2,false,true,false,false,false,false,
+29,redAlliance,NP,25,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,0,3,7,0,0,0,0,0,0,false,false,false,false,false,false,
+30,redAlliance,NP,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,6,0,2,4,false,false,true,false,false,false,
+31,redAlliance,NP,2539,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,1,2,0,0,0,0,0,0,false,false,false,false,false,true,elevator broke
+32,redAlliance,NP,341,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,1,6,0,0,0,0,0,0,false,false,true,false,false,false,
+33,redAlliance,NP,5895,false,false,false,true,false,false,0,0,0,4,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,3,2,4,3,12,0,5,0,1,4,2,false,true,false,false,false,false,
+34,redAlliance,NP,321,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,2,1,1,2,2,8,0,0,0,0,0,0,false,false,true,false,false,false,
+1,blueAlliance,EL,4373,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,5,1,1,8,0,0,0,2,2,0,false,true,false,true,false,false,"Could not latch onto cage, took too long."
+2,blueAlliance,EL,2539,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,3,5,4,2,15,0,0,0,0,0,0,false,true,false,false,false,false,
+3,blueAlliance,EL,5401,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,6,3,9,0,3,0,1,4,0,false,true,false,true,false,false,too slow to climb
+4,blueAlliance,EL,102,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,2,0,7,10,0,0,0,1,1,0,false,false,false,false,false,false,
+5,blueAlliance,EL,2559,true,false,false,false,false,false,0,0,0,4,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,2,8,0,10,0,1,0,0,1,0,false,false,true,true,false,false,didnt line up
+6,blueAlliance,LB,4361,true,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,0,2,4,0,0,1,0,0,1,false,true,false,false,false,false,Inaccurate and slow
+7,blueAlliance,JP,5992,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,6,2,11,0,0,0,0,0,0,false,false,true,false,false,false,"Sometimes ""shoots"" the coral instead of placing it, usually misses"
+8,blueAlliance,JP,1676,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,0,2,0,0,8,0,2,6,false,false,false,true,false,false,Fast algae processing
+9,blueAlliance,JP,1391,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,4,1,3,0,2,10,0,2,0,0,2,0,false,true,false,false,false,false,Speedy but sometimes inaccurate
+10,blueAlliance,JP,2590,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,1,2,1,3,1,1,7,0,0,0,0,0,false,false,false,true,false,false,"Super cool robot arm, pick up coral off ground but scoring on reef is rather slow.  Climb did not work"
+11,blueAlliance,JP,75,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,2,0,0,5,1,8,0,0,2,0,2,0,false,false,false,true,false,false,Can score and remove algae at same time.  Missed a couple L4s but they luckily landed on the reef still
+12,blueAlliance,JP,834,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,2,3,11,0,0,0,0,0,0,false,true,false,false,false,false,"Scores faster in L4 than L3 or L2, missed ocassionally, awkward climb (keep the robot upright but climb is on only one side??)"
+13,blueAlliance,JP,223,false,true,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,0,2,0,2,5,0,5,2,false,false,true,false,false,false,"Squeezes the hell out of those balls, one even popped.  Very wobbly when robot is at higher levels, slightly mediocre management of drive team when robot arms are up.  The robot doesn't really ""shoot"" algae into the net, looks more like they drop it off and push it in."
+14,blueAlliance,JP,4653,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,1,2,0,0,4,2,5,1,false,false,false,true,false,false,"The most wobbliest robot I've seen, almost capsized b/c algae, coral can easily fall off the robot, but can shoot into processor from both reef algae and ground algae."
+15,blueAlliance,JP,316,false,true,false,false,false,false,1,0,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,true,1,2,2,3,2,10,0,0,0,1,1,0,false,false,false,false,false,false,Definitely some drive team issues with moving the robot while the arms are up.  Almost tipped over.  Missed some auton L4 attempts due to the aforementioned balancing issue.
+16,blueAlliance,JP,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,5,2,0,0,7,0,0,2,1,1,2,false,false,false,false,false,false,"They really love L2, robot uses giant arm swing method (like nemesis)"
+17,blueAlliance,JP,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,true,0,0,0,0,0,0,0,0,7,3,3,7,false,false,false,false,false,false,Algae bounces out of machine b/c robot moves too fast.
+18,blueAlliance,JP,5992,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,6,0,5,13,0,0,0,0,0,0,false,false,false,false,false,false,"Mediocre shooting ability, drive team issue.  Robot is dodging station coral :skull:"
+19,blueAlliance,JP,1168,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,3,4,0,10,0,0,0,0,0,0,false,true,false,true,false,false,Takes a bit of time to aim and shoot coral but 100% accuracy.  Was climbed for a bit but then dropped down
+20,blueAlliance,JP,1403,false,false,false,true,false,false,1,0,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,8,0,8,0,1,0,1,2,0,false,true,false,false,false,false,"L4 beast, auton sacrifices accuracy for speed"
+21,blueAlliance,JP,7045,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,1,2,4,0,0,0,0,0,0,false,false,true,false,true,false,"Defense felt more like a game of cat and mouse, robot chases enemy rather than defend against them, pretty inaccurate"
+22,blueAlliance,JP,4342,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,7,1,0,8,false,true,false,false,false,false,Locking algae up into the processor
+23,blueAlliance,JP,834,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,5,1,3,1,1,11,0,0,0,0,0,0,false,true,false,false,false,false,"Slow and steady wins the race, takes their time and is mostly accurate, miss in L4"
+24,blueAlliance,JP,2590,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,2,0,0,4,2,8,0,0,0,2,2,0,false,true,false,true,false,false,"Climb did not take robot off ground, has trouble scoring, method is placing coral into slot with arm but arm isn't aligned with placement and coral is dropped into the abyss (aka missing)."
+25,blueAlliance,MTAT,10143,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,"kitbot, only played defense after auton, didnt work because their bot was too light. Not upset just dissapointed"
+26,blueAlliance,MTAT,321,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,5,0,9,0,0,0,0,0,0,false,false,true,false,false,false,
+27,blueAlliance,EL,7414,false,false,true,false,false,false,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,1,1,0,0,0,0,0,0,false,false,true,false,true,false,
+28,blueAlliance,MTAT,223,true,false,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,1,2,0,5,1,0,2,4,false,false,true,false,false,false,
+29,blueAlliance,MTAT,9015,false,false,false,false,true,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,3,2,2,5,3,15,0,0,0,0,0,0,false,false,false,false,false,false,
+30,blueAlliance,MTAT,1640,false,false,false,false,true,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,3,2,1,8,0,0,1,0,1,0,false,false,true,false,false,false,climbed at 23 seconds but still didnt make it
+31,blueAlliance,MTAT,3314,true,false,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,2,1,0,3,0,4,0,0,4,0,false,true,false,false,false,false,their swerve might be brocken because they were jittering (it wasnt the battery dance)- Soumil dusara
+32,blueAlliance,MTAT,75,false,false,false,true,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,5,2,8,0,0,0,0,0,0,false,true,false,false,false,false,
+33,blueAlliance,MTAT,4342,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,1,3,0,6,0,0,0,0,0,0,false,true,false,false,false,false,Their deep climb is so high up 😍
+34,blueAlliance,MTAT,5992,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,6,8,0,0,0,0,0,0,false,false,true,false,false,false,THEY KEEP MISSING☠
+1,blueAlliance,DP,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,1,1,0,6,0,3,0,0,3,0,false,false,false,false,false,false,very goodpreformance very versitile
+2,blueAlliance,DP,272,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,1,2,2,5,0,2,2,1,5,0,false,true,false,false,false,false,has accuracy issues but other than that good preformance
+3,blueAlliance,DP,6808,true,false,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,4,2,7,0,0,0,0,0,0,false,false,true,false,false,false,very slow cycleing of level 4
+4,blueAlliance,DP,321,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,2,0,0,0,6,8,0,0,0,0,0,0,false,true,false,false,false,false,massive accuracy issues and i assume something went wrong with the robot as they stoped scoreing high and started shooting into level 1 even though they didnt have a mechanism for it
+5,blueAlliance,DP,7414,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,3,4,0,0,7,0,0,0,0,0,0,false,false,false,false,false,false,Issues with elevator and also had defence played against it but did well otherwise
+6,blueAlliance,DP,4342,false,false,false,true,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,6,0,0,6,false,true,false,false,false,false,Something went wrong with the end effector so they went to cycleing algae and did pretty well
+7,blueAlliance,DP,1712,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,5,0,3,2,false,false,true,false,false,false,cycled algae the whole time like they should
+8,blueAlliance,DP,1807,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,8,2,13,0,0,0,0,0,0,false,true,false,false,false,false,all around good preformance
+9,blueAlliance,DP,8513,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,3,5,2,13,0,0,0,0,0,0,false,true,false,false,false,false,did very well
+10,blueAlliance,DP,1218,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,2,2,3,3,1,11,0,0,0,0,0,0,false,true,false,false,false,false,Very good performance went for all 4 layers for the bonus
+11,blueAlliance,DP,7045,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,something happened with eh robot that forced them to play defense and bang themselves around a bit
+12,blueAlliance,DP,2607,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,5,4,6,3,0,18,0,0,0,0,0,0,false,true,false,false,false,false,extremely good performance
+13,blueAlliance,DP,6808,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,6,0,7,0,0,0,0,0,0,false,false,false,false,false,false,"slow cycle time but consistent, didn't attempt climb"
+14,blueAlliance,DP,9416,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,5,0,0,5,false,false,true,false,false,false,slow cycle algae processing other than that janky movements and failing to aim
+15,blueAlliance,DP,10143,false,false,true,false,false,false,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,5,0,0,0,5,10,0,0,0,0,0,0,false,false,true,false,false,false,"kitbot, can only score level 1 and has a tank drive"
+16,blueAlliance,DP,365,false,false,false,true,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,1,2,4,4,4,15,0,0,0,0,0,0,false,true,false,false,false,false,most of their misses came from attempting level 1 for the bonus but overall did very well otherwise
+17,blueAlliance,DP,5684,false,true,false,false,false,false,2,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,true,3,0,0,0,0,3,0,0,0,0,0,0,false,true,false,false,false,false,kitbot things but very consistent at the exspence of speedy cycling but also it has a deep climb
+18,blueAlliance,DP,1391,false,false,false,true,false,false,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,0,true,0,0,4,2,2,8,0,0,0,0,0,0,false,true,false,false,false,false,had a slow cycle time due to takeing a long time to find a open spot on the reef and also some difficulty aiming but otherwise solid preformance
+19,blueAlliance,DP,321,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,3,0,0,4,8,0,0,0,0,0,0,false,true,false,false,false,false,extreme accuracy issues when it comes to coral
+20,blueAlliance,DP,4361,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,1,2,2,2,8,0,0,0,0,0,0,false,true,false,false,false,false,Slow and somewhat consistent robot
+21,blueAlliance,DP,2539,false,false,false,true,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,0,4,7,3,0,14,0,0,0,0,0,0,false,true,false,false,false,false,all around terrific preformance
+22,blueAlliance,DP,1676,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,8,1,10,0,0,0,0,0,0,false,true,false,false,false,false,Very solid level 4 bot with few mistakes
+23,blueAlliance,DP,1923,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,4,3,4,14,0,0,0,0,0,0,false,false,false,false,false,false,
+24,blueAlliance,DP,10157,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,true,false,L 1 robot that played defence after scoring a single
+25,blueAlliance,DP,8513,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,4,2,7,1,1,15,0,0,0,0,0,0,false,true,false,false,false,false,Very good performance placed in all levels for the bonus point
+26,blueAlliance,DP,708,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,3,2,0,1,7,0,0,0,0,0,0,false,false,true,true,false,false,removed all the algae but didn't score it and then scored a couple shots in each level in a attempt for the bonus ranking point and then failed to climb
+27,blueAlliance,DP,9094,true,false,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,3,5,2,10,0,0,0,0,0,0,false,true,false,false,false,false,Very fast L 4 cycling and filled up L 4 and that focused on L 3 
+28,blueAlliance,DP,1811,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,9,0,3,12,0,0,0,0,0,0,false,false,false,false,false,false,Very consistent but slow and also has difficulty intakeing coral
+29,blueAlliance,DP,103,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,2,0,0,2,0,0,0,true,0,0,0,0,0,0,0,11,0,0,6,5,false,true,false,false,false,false,Only scored barge algae shots and was very effective in it
+30,blueAlliance,DP,3142,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,2,0,9,0,0,0,0,0,0,false,true,false,false,false,false,very consistent scoring but not the fastest cycler
+31,blueAlliance,DP,4373,false,false,false,false,true,false,0,0,0,3,0,0,2,0,0,0,0,0,0,0,0,0,0,true,1,2,3,2,3,11,0,0,0,0,0,0,false,false,false,false,false,false,cycled coral to just about all levels
+32,blueAlliance,DP,316,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,1,5,0,6,0,0,4,2,false,false,false,false,false,false,did very well didn't attempt climb tho
+33,blueAlliance,DP,5401,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,5,4,0,9,0,false,true,false,false,false,false,Scored algae the entire match very well no misses whatsoever
+34,blueAlliance,DP,8513,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,5,2,1,10,0,0,0,0,0,0,false,false,true,true,false,false,cycled slower than previous matches and had issues with autoalign
+2,redAlliance,HM,1923,true,false,false,false,false,false,0,0,0,3,0,0,3,0,0,0,0,0,0,0,0,0,0,true,1,1,1,3,1,7,0,1,1,0,1,1,false,false,false,false,false,false,
+3,redAlliance,HM,1168,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,8,0,8,0,0,0,0,0,0,true,false,false,false,false,false,
+4,redAlliance,HM,2495,false,false,false,false,true,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,0,5,8,0,0,0,0,0,0,false,false,true,false,false,false,
+5,redAlliance,HM,3314,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,3,1,8,0,3,0,0,2,1,false,true,false,false,false,false,
+6,redAlliance,HM,341,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,false,1,2,3,3,0,9,0,2,0,0,2,0,false,true,false,false,false,false,fast
+7,redAlliance,HM,4653,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,0,2,0,3,1,0,4,0,false,true,false,false,false,false,
+8,redAlliance,HM,708,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+9,redAlliance,HM,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,3,0,5,0,0,1,0,1,0,false,false,true,true,false,false,
+10,redAlliance,HM,9015,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,0,1,0,0,0,0,0,0,false,false,false,false,false,false,
+11,redAlliance,HM,1257,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,3,0,0,0,3,0,0,0,0,0,0,false,false,true,false,false,false,
+12,redAlliance,HM,3314,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,4,0,8,0,5,0,0,5,0,false,true,false,false,false,false,
+13,redAlliance,HM,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,4,3,0,11,0,2,0,0,2,0,false,false,true,false,false,false,
+14,redAlliance,HM,11,false,false,false,false,true,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,2,5,0,8,0,0,0,0,0,0,false,true,false,false,false,false,
+15,redAlliance,HM,3142,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,2,0,4,0,0,0,0,0,0,false,true,false,false,false,false,
+16,redAlliance,HM,1807,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,5,0,5,0,0,0,0,0,0,false,true,false,false,false,false,
+18,redAlliance,VA,2590,true,false,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,4,3,1,12,0,0,0,3,3,0,false,true,false,false,false,false,3 note auto and good climb
+19,redAlliance,VA,103,false,false,true,false,false,false,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,0,0,0,0,0,11,0,0,5,6,false,true,false,false,false,false,
+20,redAlliance,VA,7414,true,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,4,1,0,1,5,1,0,0,3,3,0,false,false,true,false,false,false,
+21,redAlliance,HM,4653,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,3,0,3,0,0,0,0,0,0,false,false,true,false,false,false,
+22,redAlliance,HM,2458,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,false,false,
+23,redAlliance,HM,1807,false,false,false,true,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,3,0,5,0,0,0,0,0,0,false,false,true,false,false,false,
+24,redAlliance,HM,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,0,4,0,0,0,0,0,0,false,true,false,false,false,false,
+25,redAlliance,HM,484,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,3,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+26,redAlliance,HM,56,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,3,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+27,redAlliance,HM,102,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,3,4,0,8,0,0,0,0,0,0,false,false,true,false,false,false,
+28,redAlliance,HM,293,true,false,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+29,redAlliance,HM,5684,false,true,false,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,4,0,0,0,6,10,0,0,0,0,0,0,false,false,true,false,false,false,
+30,redAlliance,HM,555,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,4,3,0,8,0,0,0,0,0,0,false,false,true,false,false,false,
+31,redAlliance,HM,2590,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,1,3,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+32,redAlliance,HM,10143,false,true,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,6,0,0,0,0,6,0,0,0,0,0,0,false,false,true,false,false,false,
+33,redAlliance,HM,7045,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,2,0,5,0,0,0,0,0,0,false,false,true,false,false,false,
+34,redAlliance,HM,2607,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,1,2,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+95,blueAlliance,LB,3314,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,3,2,0,5,0,3,0,2,5,0,false,true,false,false,false,false,
+96,blueAlliance,DP,834,false,true,false,false,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,1,0,0,4,4,9,0,0,0,0,0,0,false,true,false,false,false,false,massive accuracy issues as they missed more than they scored
+97,blueAlliance,DP,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,3,6,0,11,0,0,2,0,2,0,false,false,true,false,false,false,did well their auton didnt work out
+98,blueAlliance,DP,1807,false,false,false,false,true,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,9,2,11,0,0,0,0,0,0,false,true,false,false,false,false,very fast cycle with solid accuracy 
+99,blueAlliance,DP,9015,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,3,2,1,10,0,0,0,0,0,0,false,false,true,true,false,false,cycled lower levels for most of the game
+100,blueAlliance,DP,1403,false,false,false,true,false,false,1,0,0,2,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,3,2,1,8,0,0,0,1,1,0,false,true,false,false,false,false,average preformance
+101,blueAlliance,DP,1391,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,2,1,6,4,1,14,0,0,0,0,0,0,false,true,false,false,false,false,very good preformance
+102,blueAlliance,DP,3142,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,6,0,7,0,0,0,0,0,0,false,true,false,false,false,false,got penalty for having two coral stuck and got stuck on a algae for a bit overall had not the best game
+103,blueAlliance,DP,555,false,false,false,true,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,4,2,8,0,0,0,0,0,0,false,false,true,false,false,false,slow cycle times and takes time to aim 
+104,blueAlliance,DP,1168,false,true,false,false,false,false,0,0,0,0,3,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,4,4,2,13,0,0,0,0,0,0,false,false,true,false,false,false,didn't initiate climb other than that their auton need work 
+105,blueAlliance,DP,10157,false,true,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,3,0,0,0,2,5,0,0,0,0,0,0,false,false,true,false,true,false,didn't play defense for half the game and it showed
+106,blueAlliance,DP,341,false,false,false,false,true,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,4,4,6,3,0,17,0,2,0,1,3,0,false,true,false,false,false,false,got stuck for a lil bit but is extremely good at cycling coral
+107,blueAlliance,DP,1811,true,false,false,false,false,false,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,4,5,0,3,12,0,0,0,0,0,0,false,false,false,false,false,false,knocked a L1 coral off the reef but otherwise was very effective in cycling L3 shots
+108,blueAlliance,DP,1712,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,0,10,0,4,6,false,true,false,false,false,false,did their job
+109,blueAlliance,DP,834,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,true,1,0,5,1,1,8,0,0,0,0,0,0,false,true,false,false,false,false,did very well for the most part
+110,blueAlliance,DP,11,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,4,1,0,8,0,4,0,0,2,2,false,true,false,false,false,false,did well nothing notable
+95,blueAlliance,DP,1640,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,3,2,1,9,0,0,2,1,2,1,false,true,false,false,false,false,not their best performance but serviceable
+96,blueAlliance,LB,7045,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,1,1,2,0,0,0,0,0,0,false,false,true,false,true,false,
+97,blueAlliance,LB,2495,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,2,4,1,10,0,0,0,0,0,0,true,false,false,false,false,false,
+98,blueAlliance,LB,7414,false,true,false,false,false,false,0,2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,4,6,0,1,11,0,0,0,1,1,0,false,true,false,false,false,false,
+99,blueAlliance,MTAT,1923,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,2,2,5,1,11,0,0,0,0,0,0,false,false,false,false,false,false,
+100,blueAlliance,MTAT,1218,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,1,3,3,1,8,0,0,0,0,0,0,false,true,false,false,false,false,
+101,blueAlliance,MTAT,2590,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,2,4,2,3,0,6,5,0,0,0,0,0,false,true,false,false,false,false,They have a versatile ground intake
+102,blueAlliance,MTAT,1089,false,true,false,false,false,false,0,0,0,1,2,1,2,0,0,0,0,0,0,0,0,0,0,true,0,7,6,4,0,17,0,0,0,0,0,0,false,false,false,false,false,false,very fast cycleyay
+103,blueAlliance,MTAT,5992,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,2,2,1,6,0,0,0,0,0,0,false,false,false,false,true,false,dk why they played defense but they did
+104,blueAlliance,MTAT,316,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,2,4,0,6,0,2,2,1,4,1,false,false,false,false,false,false,they fumble the algae sometimes but I still love them
+105,blueAlliance,MTAT,6808,false,false,false,false,true,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,4,4,0,8,0,0,0,0,0,0,false,false,false,false,false,false,
+107,blueAlliance,MAGGIE,4653,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,0,3,4,8,0,0,0,3,3,0,false,true,false,false,false,false,can place coral and grab algae at once but very often makes it drop the coral
+108,blueAlliance,MAGGIE,3314,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,6,7,1,14,0,2,0,0,2,0,false,true,false,false,false,false,very sturdy robot. Never swayed or tipped
+109,blueAlliance,MAGGIE,293,false,false,false,true,false,false,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,true,1,0,0,0,1,2,0,0,0,0,0,0,false,true,false,false,true,false,played defense most of teleop
+110,blueAlliance,MAGGIE,1403,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+110,blueAlliance,MAGGIE,1403,false,false,false,false,true,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,5,2,2,1,11,0,0,1,0,1,0,false,false,false,false,false,false,"incomplete data set, lost track of robot for ~10s"
+95,blueAlliance,WYYY,1168,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,5,4,1,0,10,0,0,0,0,0,0,false,true,false,false,false,false,
+96,blueAlliance,EL,11,false,false,false,false,true,false,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,true,0,0,1,5,3,9,0,4,0,0,1,3,false,true,false,false,false,false,
+97,blueAlliance,EL,10157,true,false,false,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,0,4,5,0,0,0,0,0,0,false,false,true,false,true,false,
+98,blueAlliance,EL,5684,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,7,0,0,0,2,9,0,0,0,0,0,0,false,true,false,false,false,false,
+99,blueAlliance,EL,341,false,false,false,false,true,false,0,0,0,2,0,1,0,1,0,0,0,0,1,1,0,0,0,true,0,6,5,2,2,2,13,2,2,1,2,3,false,true,false,false,false,false,
+100,blueAlliance,EL,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,1,9,14,0,0,0,2,2,0,true,false,false,false,false,false,
+101,blueAlliance,LB,1257,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,true,2,4,5,0,4,15,0,0,0,0,0,0,false,false,false,false,false,false,
+102,blueAlliance,LB,222,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,2,2,0,1,2,5,2,6,false,true,false,true,false,false,too slow to climb
+103,blueAlliance,LB,56,true,false,false,false,false,false,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,2,4,0,7,0,0,0,0,0,0,true,false,false,true,false,false,not up enough
+104,blueAlliance,LB,9416,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,true,false,false,true,false,
+105,blueAlliance,LB,103,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,true,0,0,3,2,1,6,0,3,2,0,4,1,false,true,false,true,false,false,too late to climb
+106,blueAlliance,LB,3637,true,false,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,1,2,2,3,8,0,0,0,0,0,0,false,true,false,false,false,false,
+107,blueAlliance,LB,10143,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,4,0,0,0,0,4,0,0,0,0,0,0,false,false,true,false,false,false,
+108,blueAlliance,EL,2458,false,false,false,false,true,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+109,blueAlliance,MTAT,5895,false,true,false,false,false,false,0,0,0,4,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,2,4,3,2,11,0,7,0,1,6,2,false,true,false,false,false,false,They handle an algae and a coral at the same time and then score in the net and turn around and score on the reef........ im so scared
+110,blueAlliance,MTAT,8513,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,1,3,5,2,0,11,0,0,1,0,1,0,false,true,false,false,false,false,
+96,redAlliance,BE,75,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,3,3,1,7,0,0,0,0,0,0,false,true,false,false,false,false,
+97,redAlliance,BE,2722,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,2,3,0,8,0,0,0,0,0,0,false,false,false,false,false,false,
+98,redAlliance,BE,708,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,true,0,5,1,1,0,7,0,0,2,1,3,0,false,true,false,false,false,false,
+99,redAlliance,BE,5895,false,true,false,false,false,false,0,0,0,4,0,1,3,0,0,0,0,0,0,0,0,0,0,true,0,3,4,1,2,10,0,5,2,0,3,4,false,true,false,false,false,false,
+100,redAlliance,BE,5401,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,2,0,0,2,0,8,1,0,6,3,false,true,false,false,false,false,
+101,redAlliance,BE,365,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,8,3,2,13,0,0,0,0,0,0,false,false,false,true,false,false,
+102,redAlliance,BE,223,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,0,0,0,0,0,0,8,3,1,5,7,false,false,false,false,false,false,
+103,redAlliance,DU,25,false,false,false,false,true,false,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,4,0,1,6,1,0,0,0,0,0,true,false,false,false,false,false,
+104,redAlliance,DU,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,3,0,0,3,0,0,2,1,3,0,false,false,true,false,false,false,
+105,redAlliance,DU,708,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,true,0,2,3,1,1,7,0,0,4,0,2,2,false,true,false,false,false,false,
+106,redAlliance,DU,7414,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,true,0,4,4,0,1,9,0,0,0,3,3,0,false,true,false,false,false,false,
+107,redAlliance,DU,5684,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,10,0,0,0,1,11,0,0,0,0,0,0,false,true,false,false,false,false,Very early hang: 20 seconds left after hanging
+108,redAlliance,DU,1218,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,5,1,0,9,0,0,0,0,0,0,false,true,false,false,false,false,
+109,redAlliance,DU,2607,true,false,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,8,6,4,0,18,0,0,0,0,0,0,false,true,false,false,false,false,
+110,redAlliance,BE,4342,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,0,5,0,7,0,0,2,0,0,2,false,true,false,true,false,false,
+97,redAlliance,MO,103,false,true,false,false,false,false,0,0,0,1,1,1,0,0,0,0,2,1,0,3,0,0,0,true,0,0,4,2,1,7,0,0,0,0,0,0,false,true,false,false,false,false,
+98,redAlliance,MO,4342,false,true,false,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,2,4,1,7,0,0,2,0,0,2,false,false,true,false,false,false,
+99,redAlliance,MO,1811,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,2,5,0,0,7,0,0,0,0,0,0,false,false,true,false,false,false,
+100,redAlliance,MO,10143,false,false,false,true,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,2,0,0,0,0,2,0,0,0,0,0,0,false,false,false,false,false,true,came back?
+101,redAlliance,MO,9094,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,4,1,0,5,0,5,0,0,5,0,false,false,true,false,false,false,
+102,redAlliance,MO,4373,false,true,false,false,false,false,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,true,0,2,4,4,3,13,0,0,0,0,0,0,false,false,true,false,false,false,
+103,redAlliance,SM,2720,false,false,false,true,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,2,5,7,0,0,0,0,0,0,true,false,false,false,false,false,
+104,redAlliance,SM,2722,false,true,false,false,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,0,0,4,0,4,0,0,0,1,1,0,false,false,true,false,true,false,
+105,redAlliance,SM,1807,false,false,false,false,true,false,1,0,4,5,2,0,11,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+106,redAlliance,SM,9015,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,4,1,2,3,0,10,0,0,0,0,0,0,false,true,false,false,false,false,
+107,redAlliance,SM,272,false,false,false,true,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,1,0,0,0,0,1,0,0,0,0,0,0,true,false,false,false,true,false,
+108,redAlliance,SM,5181,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,true,0,0,2,3,0,5,0,0,1,0,1,0,false,false,true,false,false,false,
+109,redAlliance,SM,75,false,false,false,true,false,false,0,0,0,2,1,0,2,0,0,0,0,0,0,0,0,0,0,true,0,1,4,5,0,10,0,0,0,0,0,0,false,true,false,false,false,false,
+110,redAlliance,NP,1923,false,false,false,true,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,0,0,0,0,0,0,0,0,0,0,0,false,false,false,false,false,false,
+96,redAlliance,NP,2458,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,0,0,0,0,0,0,0,0,0,0,0,false,false,true,false,true,false,
+97,redAlliance,NP,1676,false,false,false,true,false,false,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,2,3,0,8,0,0,2,0,2,0,false,false,false,true,false,false,
+98,redAlliance,NP,8513,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,3,5,3,1,12,0,0,0,0,0,0,false,true,false,false,false,false,
+99,redAlliance,NP,102,false,false,false,true,false,false,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,true,1,2,6,2,0,11,0,0,0,0,0,0,false,false,true,false,false,false,
+100,redAlliance,NP,2607,false,true,false,false,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,0,5,8,0,13,0,0,0,0,0,0,false,true,false,false,false,false,
+101,redAlliance,NP,4361,false,false,true,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true,0,1,5,3,1,10,0,0,0,0,0,0,false,true,false,false,false,false,
+103,redAlliance,NP,25,false,true,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,false,0,1,2,0,1,4,0,0,0,0,0,0,true,false,false,false,false,false,
+104,redAlliance,NP,2495,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,1,3,3,0,7,0,0,3,0,3,0,false,false,true,false,false,false,
+105,redAlliance,NP,9416,false,false,true,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,true,0,2,2,2,0,6,0,0,2,2,4,0,false,true,false,false,false,false,
+106,redAlliance,NP,7414,false,false,true,false,false,false,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,true,0,3,3,0,0,6,0,0,0,2,2,0,false,false,true,false,false,false,
+107,redAlliance,NP,5684,false,false,true,false,false,false,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,true,6,0,0,0,0,6,0,0,0,0,0,0,false,true,false,false,false,false,
+108,redAlliance,NP,1218,false,false,false,true,false,false,0,0,0,3,0,1,2,0,0,0,0,0,0,0,0,0,0,true,0,4,2,1,0,7,0,0,0,0,0,0,false,true,false,false,false,false,
+109,redAlliance,NP,2607,false,true,false,false,false,false,0,0,0,3,0,1,1,0,0,0,0,0,0,0,0,0,0,true,0,3,5,5,0,13,0,0,0,0,0,0,false,true,false,false,false,false,
+110,redAlliance,NP,193,false,false,true,false,false,false,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,true,0,3,2,3,0,8,0,0,0,0,0,0,false,true,false,false,false,false,

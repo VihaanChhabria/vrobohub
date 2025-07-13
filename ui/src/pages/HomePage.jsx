@@ -143,6 +143,7 @@ const HomePage = () => {
         <TableComponent
           tbaEventMatchesData={tbaEventMatchesData}
           teamInfo={teamInfo}
+          scoutingData={scoutingData}
           selectedTeams={selectedTeams}
           selectedMatches={selectedMatches}
         />
