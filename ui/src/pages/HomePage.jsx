@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import Button from "@mui/material/Button";
 import FilterBarComponent from "../components/FilterBarComponent";
+import EventInfoComponent from "../components/EventInfoComponent";
+import { Box } from "@mui/material";
+// import TableComponent from "../components/TableComponent";
 
 /**
  * @typedef {Object} MatchData
@@ -53,24 +55,22 @@ const sampleData = [
 ];
 
 const HomePage = () => {
-  const [selectedEvent, setSelectedEvent] = useState("");
+  const [selectedEvent, setSelectedEvent] = useState("2025newton");
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [selectedMatches, setSelectedMatches] = useState([]);
   return (
     <div>
-      {/* <Button variant="contained" color="primary">
-        {" "}
-        Click Me
-      </Button> */}
-      <FilterBarComponent
-        matchData={sampleData}
-        selectedEvent={selectedEvent}
-        setSelectedEvent={setSelectedEvent}
-        selectedTeams={selectedTeams}
-        setSelectedTeams={setSelectedTeams}
-        selectedMatches={selectedMatches}
-        setSelectedMatches={setSelectedMatches}
-      />
+      <Box sx={{ p: 3 }}>
+        <EventInfoComponent matchData={sampleData} selectedEvent={selectedEvent} />
+        <FilterBarComponent
+          matchData={sampleData}
+          selectedTeams={selectedTeams}
+          setSelectedTeams={setSelectedTeams}
+          selectedMatches={selectedMatches}
+          setSelectedMatches={setSelectedMatches}
+        />
+        {/* <TableComponent /> */}
+      </Box>
     </div>
   );
 };
