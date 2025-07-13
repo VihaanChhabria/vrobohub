@@ -16,14 +16,23 @@ import { Download, Clear } from "@mui/icons-material";
 import { toast } from "react-toastify";
 
 const FilterBarComponent = ({
-  matchData,
-  selectedEvent,
-  setSelectedEvent,
+  tbaEventMatchesData,
+  teamInfo,
   selectedTeams,
   setSelectedTeams,
   selectedMatches,
   setSelectedMatches,
 }) => {
+  const uniqueTeams = Array.from(
+    new Set(
+      tbaEventMatchesData.flatMap((match) => [...match.red, ...match.blue])
+    )
+  )
+    .sort((a, b) => parseInt(a) - parseInt(b))
+    .map((teamNum) => `${teamNum} - ${teamInfo[teamNum] || ""}`);
+
+  const matches = tbaEventMatchesData.map((match) => match.match);
+
   return (
     <Paper elevation={1} sx={{ p: 3, mb: 3 }}>
       <Box
@@ -34,29 +43,10 @@ const FilterBarComponent = ({
           alignItems: "center",
         }}
       >
-        <FormControl sx={{ minWidth: 160 }}>
-          <InputLabel>Event</InputLabel>
-          <Select
-            value={selectedEvent}
-            label="Event"
-            onChange={(e) => setSelectedEvent(e.target.value)}
-          >
-            {Array.from(new Set(matchData.map((match) => match.event_key))).map(
-              (event) => (
-                <MenuItem key={event} value={event}>
-                  {event}
-                </MenuItem>
-              )
-            )}
-          </Select>
-        </FormControl>
-
         <FormControl sx={{ minWidth: 300 }}>
           <Autocomplete
             multiple
-            options={Array.from(
-              new Set(matchData.map((match) => match.team_number))
-            )}
+            options={uniqueTeams}
             getOptionLabel={(option) => option.toString()}
             value={selectedTeams}
             onChange={(event, newValue) => setSelectedTeams(newValue)}
@@ -74,9 +64,7 @@ const FilterBarComponent = ({
         <FormControl sx={{ minWidth: 250 }}>
           <Autocomplete
             multiple
-            options={Array.from(
-              new Set(matchData.map((match) => match.match_number))
-            )}
+            options={matches}
             getOptionLabel={(option) => option.toString()}
             value={selectedMatches}
             onChange={(event, newValue) => setSelectedMatches(newValue)}
@@ -96,7 +84,6 @@ const FilterBarComponent = ({
             variant="outlined"
             startIcon={<Clear />}
             onClick={() => {
-              setSelectedEvent("");
               setSelectedTeams([]);
               setSelectedMatches([]);
               toast.success("Filters cleared successfully!");

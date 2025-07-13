@@ -2,7 +2,7 @@ import { ArrowBack } from "@mui/icons-material";
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
-const EventInfoComponent = ({ matchData, selectedEvent }) => {
+const EventInfoComponent = ({ matchData, eventName }) => {
   return (
     <div>
       <Box sx={{ mb: 3 }}>
@@ -19,7 +19,7 @@ const EventInfoComponent = ({ matchData, selectedEvent }) => {
             gutterBottom
             fontWeight="bold"
           >
-            {selectedEvent ? selectedEvent : "null"}
+            {eventName ? eventName : "null"}
           </Typography>
 
           <Button
@@ -35,7 +35,7 @@ const EventInfoComponent = ({ matchData, selectedEvent }) => {
         </Box>
 
         <Typography variant="body1" color="text.secondary">
-          Viewing {matchData.length} records
+          Fetched {matchData.length} scouting records
         </Typography>
       </Box>
     </div>
