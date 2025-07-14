@@ -97,7 +97,7 @@ const EventPickerPage = () => {
           sx={{
             display: "flex",
             alignItems: "center",
-            height: "90%",
+            height: "85%",
             width: "45vw",
             flexDirection: "column",
             gap: 2,
