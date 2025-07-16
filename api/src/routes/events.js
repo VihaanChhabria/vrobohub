@@ -48,6 +48,7 @@ router.get("/", async (req, res) => {
       return {
         event_key: row.event_key,
         name: eventName,
+        scouted_by: row.scouted_by,
       };
     })
   );
