@@ -3,9 +3,11 @@ import submitRoute from "./routes/submit.js";
 import validateRoute from "./routes/validate.js";
 import matchesRoute from "./routes/matches.js";
 import eventsRoute from "./routes/events.js";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("RoboHub API");
