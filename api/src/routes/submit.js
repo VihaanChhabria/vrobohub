@@ -7,24 +7,15 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   const payload = req.body;
 
-  const isBatch = Array.isArray(payload);
+  const { isValid, errors } = validateMatchData(payload);
 
-  const matches = isBatch ? payload : [payload];
-
-  for (const match of matches) {
-    const { isValid, errors } = validateMatchData(match);
-    if (!isValid) {
-      return res.status(400).json({
-        error: "Invalid match data",
-        details: errors,
-        data: match,
-      });
-    }
+  if (!isValid) {
+    return res
+      .status(400)
+      .json({ error: "Invalid match data", details: errors });
   }
 
-  const insertData = matches.map((match) => ({ data: match }));
-
-  const { error } = await supabase.from("match_data").insert(insertData);
+  const { error } = await supabase.from("match_data").insert(payload);
 
   if (error) {
     return res.status(500).json({
@@ -34,9 +25,7 @@ router.post("/", async (req, res) => {
   }
 
   res.status(201).json({
-    message: isBatch
-      ? `${matches.length} matches submitted successfully`
-      : "Match submitted successfully",
+    message: `${payload.data.length} matches submitted successfully`,
   });
 });
 

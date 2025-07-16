@@ -5,9 +5,9 @@ import { validateMatchData } from '../services/schemaValidator.js';
 const router = express.Router();
 
 router.post("/", async (req, res) => {
-  const matchData = req.body;
+  const payload = req.body;
 
-  const { isValid, errors } = validateMatchData(matchData);
+  const { isValid, errors } = validateMatchData(payload);
   if (!isValid) {
     return res.status(400).json({ error: 'Invalid match data', details: errors });
   }

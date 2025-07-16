@@ -20,9 +20,6 @@ with open(input_file, newline='', encoding='utf-8') as csvfile:
         for i in range(6):  # startPoses0 through startPoses5
             if row[f"startPoses{i}"].lower() == "true":
                 output.append({
-                    "event_key": EVENT_KEY,
-                    "timestamp": ISO_TIMESTAMP,
-                    "scouted_by": ["7414", "103"],
                     "match_number": "qm" + row["matchNumber"],
                     "alliance": "red" if row["alliance"] == "redAlliance" else "blue",
                     "team_number": int(row["selectTeam"]),
@@ -67,5 +64,6 @@ with open(input_file, newline='', encoding='utf-8') as csvfile:
                 })
 
 # Write output JSON
+print(len(output))
 with open(output_file, "w") as f:
     json.dump(output, f, indent=2)
