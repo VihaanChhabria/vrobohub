@@ -1,0 +1,58 @@
+import express from "express";
+import { supabase } from "../services/supabaseClient.js";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const router = express.Router();
+
+router.get("/", async (req, res) => {
+  // Fetch table data of all events in vrobohub
+  const { data: rows, error } = await supabase.from("all_events").select("*");
+
+  if (error) {
+    return res
+      .status(500)
+      .json({ error: "Failed to query data", details: error.message });
+  }
+
+  const finalData = await Promise.all(
+    rows.map(async (row) => {
+      var eventName = row.name;
+      if (!eventName) {
+        const tbaRes = await fetch(
+          `https://www.thebluealliance.com/api/v3/event/${row.event_key}/simple`,
+          {
+            headers: {
+              "X-TBA-Auth-Key": process.env.TBA_KEY,
+            },
+          }
+        );
+
+        const tbaData = await tbaRes.json();
+        eventName = tbaData.name;
+
+        const { error } = await supabase
+          .from("all_events")
+          .update({ name: eventName })
+          .eq("event_key", row.event_key);
+
+        if (error) {
+          return res.status(500).json({
+            error: "Database insert failed",
+            details: error.message,
+          });
+        }
+      }
+
+      return {
+        event_key: row.event_key,
+        name: eventName,
+      };
+    })
+  );
+
+  return res.status(200).json(finalData);
+});
+
+export default router;

@@ -1,7 +1,8 @@
 import express from "express";
 import submitRoute from "./routes/submit.js";
-import validateRoute from './routes/validate.js';
+import validateRoute from "./routes/validate.js";
 import matchesRoute from "./routes/matches.js";
+import eventsRoute from "./routes/events.js";
 
 const app = express();
 app.use(express.json());
@@ -9,13 +10,14 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("RoboHub API");
 });
-app.get('/ping', (req, res) => {
+app.get("/ping", (req, res) => {
   res.sendStatus(200);
 });
 
 app.use("/submit", submitRoute);
-app.use('/validate', validateRoute);
+app.use("/validate", validateRoute);
 app.use("/matches", matchesRoute);
+app.use("/events", eventsRoute);
 
 const port = process.env.PORT || 3000;
 
