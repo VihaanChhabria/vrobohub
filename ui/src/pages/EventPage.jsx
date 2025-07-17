@@ -6,9 +6,12 @@ import { Box } from "@mui/material";
 import scoutingData from "../assets/scouting_data.json";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
+import { useParams } from "react-router-dom";
 
 const EventPage = () => {
-  const [selectedEvent, setSelectedEvent] = useState("2025mrcmp");
+  const { event_key: selectedEvent } = useParams();
+  console.log(selectedEvent);
+
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [selectedMatches, setSelectedMatches] = useState([]);
 

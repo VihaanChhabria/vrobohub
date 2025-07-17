@@ -1,8 +1,10 @@
 import { Add, ArrowForward } from "@mui/icons-material";
 import { Box, Button, Paper, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchResultComponent = ({ scoutedEvents, searchValue }) => {
+  const navigate = useNavigate();
   return (
     <Paper
       sx={{
@@ -92,6 +94,9 @@ const SearchResultComponent = ({ scoutedEvents, searchValue }) => {
                   variant="contained"
                   color="primary"
                   endIcon={<ArrowForward />}
+                  onClick={() => {
+                    navigate(`/event/${eventData.event_key}`);
+                  }}
                 >
                   View Event
                 </Button>

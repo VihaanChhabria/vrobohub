@@ -9,7 +9,7 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<EventPickerPage />} />
-        <Route path="/event" element={<EventPage />} />
+        <Route path="/event/:event_key" element={<EventPage />} />
       </Routes>
     </>
   );
