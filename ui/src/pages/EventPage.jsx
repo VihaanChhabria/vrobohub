@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import FilterBarComponent from "../components/FilterBarComponent";
-import EventInfoComponent from "../components/EventInfoComponent";
+import FilterBarComponent from "../components/EventComponents/FilterBarComponent";
+import EventInfoComponent from "../components/EventComponents/EventInfoComponent";
+import TableComponent from "../components/EventComponents/TableComponent";
 import { Box } from "@mui/material";
-import TableComponent from "../components/TableComponent";
 import scoutingData from "../assets/scouting_data.json";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
