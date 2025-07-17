@@ -7,10 +7,12 @@ import scoutingData from "../assets/scouting_data.json";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
+import fetchTBA from "../utils/fetchTBA";
+import { set, get } from "idb-keyval";
+import fetchFromCache from "../utils/fetchFromCache";
 
 const EventPage = () => {
   const { event_key: selectedEvent } = useParams();
-  console.log(selectedEvent);
 
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [selectedMatches, setSelectedMatches] = useState([]);
@@ -38,38 +40,28 @@ const EventPage = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const response = await fetch(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`,
-          {
-            headers: {
-              "X-TBA-Auth-Key": import.meta.env.VITE_TBA_AUTH_KEY,
-            },
-          }
+        const data = await fetchTBA(
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`
         );
 
-        // Convert the response to the desired format
-        if (response.ok) {
-          const data = await response.json();
-          const formatted = data
-            .map((match) => ({
-              match: match.key.replace(`${selectedEvent}_`, ""),
-              red: match.alliances.red.team_keys.map((key) =>
-                key.replace("frc", "")
-              ),
-              blue: match.alliances.blue.team_keys.map((key) =>
-                key.replace("frc", "")
-              ),
-              redScore: match.alliances.red.score,
-              blueScore: match.alliances.blue.score,
-            }))
-            .sort((a, b) => {
-              const ak = sortMatchKey(a.match);
-              const bk = sortMatchKey(b.match);
-              return ak.type - bk.type || ak.set - bk.set || ak.num - bk.num;
-            });
-          console.log(formatted);
-          setTBAEventMatchesData(formatted);
-        }
+        const formatted = data
+          .map((match) => ({
+            match: match.key.replace(`${selectedEvent}_`, ""),
+            red: match.alliances.red.team_keys.map((key) =>
+              key.replace("frc", "")
+            ),
+            blue: match.alliances.blue.team_keys.map((key) =>
+              key.replace("frc", "")
+            ),
+            redScore: match.alliances.red.score,
+            blueScore: match.alliances.blue.score,
+          }))
+          .sort((a, b) => {
+            const ak = sortMatchKey(a.match);
+            const bk = sortMatchKey(b.match);
+            return ak.type - bk.type || ak.set - bk.set || ak.num - bk.num;
+          });
+        setTBAEventMatchesData(formatted);
       } catch (error) {
         console.error("Failed to fetch match data from TBA:", error);
         toast.error("Failed to fetch match data from TBA");
@@ -78,25 +70,16 @@ const EventPage = () => {
 
     const fetchTeamInfo = async () => {
       try {
-        const response = await fetch(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`,
-          {
-            headers: {
-              "X-TBA-Auth-Key": import.meta.env.VITE_TBA_AUTH_KEY,
-            },
-          }
+        const data = await fetchTBA(
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`
         );
 
         // Convert the response to the desired format
-        if (response.ok) {
-          const data = await response.json();
-          const formatted = {};
-          data.forEach((team) => {
-            formatted[team.team_number] = team.nickname;
-          });
-          console.log(formatted);
-          setTeamInfo(formatted);
-        }
+        const formatted = {};
+        data.forEach((team) => {
+          formatted[team.team_number] = team.nickname;
+        });
+        setTeamInfo(formatted);
       } catch (error) {
         console.error("Failed to fetch team info from TBA:", error);
         toast.error("Failed to fetch team info from TBA");
@@ -105,22 +88,16 @@ const EventPage = () => {
 
     const fetchEventName = async () => {
       try {
-        const response = await fetch(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}`,
-          {
-            headers: {
-              "X-TBA-Auth-Key": import.meta.env.VITE_TBA_AUTH_KEY,
-            },
-          }
+        const data = await fetchFromCache(
+          "https://vrobohub-api.onrender.com/events",
+          "https://vrobohub-api.onrender.com/events/last_updated",
+          false
         );
+        const event = data.find((event) => event.event_key === selectedEvent);
 
         // Convert the response to the desired format
-        if (response.ok) {
-          const data = await response.json();
-          const formatted = `${data.year} ${data.name}`;
-          console.log(formatted);
-          setEventName(formatted);
-        }
+        const formatted = `${event.event_key.slice(0, 4)} ${event.name}`;
+        setEventName(formatted);
       } catch (error) {
         console.error("Failed to fetch team info from TBA:", error);
         toast.error("Failed to fetch team info from TBA");

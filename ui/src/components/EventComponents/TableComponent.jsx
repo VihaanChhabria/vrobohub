@@ -182,16 +182,6 @@ const TableComponent = ({
                     const missingTeams = [];
                     [...row.red, ...row.blue].forEach((team) => {
                       const found = scoutingData.some((sd) => {
-                        if (sd.match_number == "qm1") {
-                          console.log(
-                            `Checking if ${sd.match_number} == ${
-                              row.match
-                            } and ${sd.team_number} == ${team}, ${
-                              sd.match_number == row.match &&
-                              sd.team_number.toString() == team
-                            }`
-                          );
-                        }
                         return (
                           sd.match_number == row.match &&
                           sd.team_number.toString() == team

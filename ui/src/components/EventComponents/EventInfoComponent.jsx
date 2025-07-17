@@ -1,8 +1,10 @@
 import { ArrowBack } from "@mui/icons-material";
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const EventInfoComponent = ({ matchData, eventName }) => {
+  const navigate = useNavigate();
   return (
     <div>
       <Box sx={{ mb: 3 }}>
@@ -27,7 +29,7 @@ const EventInfoComponent = ({ matchData, eventName }) => {
             color="error"
             startIcon={<ArrowBack />}
             onClick={() => {
-              // TODO: implement going to event selection page
+              navigate("/")
             }}
           >
             Back

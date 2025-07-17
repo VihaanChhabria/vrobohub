@@ -3,6 +3,7 @@ import vrobohubLogo from "../assets/vrobohub_logo.png";
 import { Box } from "@mui/material";
 import SearchComponent from "../components/EventPickerComponents/SearchComponent";
 import SearchResultComponent from "../components/EventPickerComponents/SearchResultComponent";
+import fetchFromCache from "../utils/fetchFromCache";
 
 const EventPickerPage = () => {
   const [scoutedEvents, setScoutedEvents] = useState([]);
@@ -10,17 +11,16 @@ const EventPickerPage = () => {
 
   useEffect(() => {
     const fetchScoutedEvents = async () => {
-      const res = await fetch(
-        `https://vrobohub-api.onrender.com/events`
+      const data = await fetchFromCache(
+        "https://vrobohub-api.onrender.com/events",
+        "https://vrobohub-api.onrender.com/events/last_updated",
+        false
       );
-
-      const data = await res.json();
-      console.log(data);
 
       setScoutedEvents(data);
     };
     fetchScoutedEvents();
-  });
+  }, []);
 
   return (
     <Box
@@ -69,9 +69,15 @@ const EventPickerPage = () => {
             gap: 2,
           }}
         >
-          <SearchComponent searchValue={searchValue} setSearchValue={setSearchValue}/>
+          <SearchComponent
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
         </Box>
-        <SearchResultComponent scoutedEvents={scoutedEvents} searchValue={searchValue}/>
+        <SearchResultComponent
+          scoutedEvents={scoutedEvents}
+          searchValue={searchValue}
+        />
       </Box>
     </Box>
   );
