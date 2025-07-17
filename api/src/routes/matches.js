@@ -51,4 +51,23 @@ router.get("/", async (req, res) => {
   return res.status(200).json(combined);
 });
 
+router.get("/last_updated", async (req, res) => {
+  const { event_key } = req.query;
+
+  const { data, error } = await supabase
+    .from("match_data")
+    .select("created_at")
+    .eq("event_key", event_key)
+    .order("created_at", { ascending: false })
+    .limit(1);
+
+  if (error) {
+    return res
+      .status(500)
+      .json({ error: "Failed to query data", details: error.message });
+  }
+
+  return res.status(200).json(data[0].created_at);
+});
+
 export default router;
