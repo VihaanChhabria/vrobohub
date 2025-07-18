@@ -10,7 +10,7 @@ const SearchResultComponent = ({ scoutedEvents, searchValue }) => {
       sx={{
         display: "flex",
         alignItems: "center",
-        height: "85%",
+        height: "80%",
         width: "45vw",
         flexDirection: "column",
         gap: 2,

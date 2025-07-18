@@ -28,7 +28,7 @@ const EventPickerPage = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "85vh",
         flexDirection: "column",
         overflow: "hidden",
       }}
@@ -38,24 +38,9 @@ const EventPickerPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "25vh",
-        }}
-      >
-        <img
-          src={vrobohubLogo}
-          alt="VRoboHub Logo"
-          style={{ width: "auto", height: "75%" }}
-        />
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "75vh",
           flexDirection: "row",
           gap: 2,
-          width: "95vw",
+          width: "100%",
         }}
       >
         <Box
@@ -63,8 +48,8 @@ const EventPickerPage = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "100%",
-            width: "50vw",
+            width: "45vw",
+            height: "90vh",
             flexDirection: "column",
             gap: 2,
           }}
