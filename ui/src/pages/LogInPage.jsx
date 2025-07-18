@@ -1,7 +1,34 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import supabase from "../services/supabaseClient";
+import { toast } from "react-toastify";
 
 const LogInPage = () => {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogIn = async () => {
+    if (password === "" || email === "") {
+      toast.error("Please fill in all the fields");
+      return;
+    }
+
+    const result = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (result.error) {
+      toast.error(result.error.message);
+    } else {
+      toast.success("Logged In Successfully");
+      navigate("/");
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -35,6 +62,8 @@ const LogInPage = () => {
           fullWidth
           required
           type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
         />
         <TextField
           label="Password"
@@ -42,12 +71,14 @@ const LogInPage = () => {
           fullWidth
           required
           type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
         <Button
           variant="contained"
           fullWidth
           sx={{ mt: 2 }}
-          onClick={() => alert("...")}
+          onClick={() => handleLogIn()}
         >
           Log In
         </Button>

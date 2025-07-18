@@ -1,13 +1,25 @@
 import { Box, Button, Typography } from "@mui/material";
 import vrobohubLogo from "../assets/vrobohub_logo.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Settings } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import supabase from "../services/supabaseClient";
 
 const HeaderComponent = () => {
   const navigate = useNavigate();
 
   const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    supabase.auth.onAuthStateChange((event, session) => {
+      console.log("!!", event, session);
+      if (session) {
+        setLoggedIn(true);
+      } else {
+        setLoggedIn(false);
+      }
+    })
+  }, []);
   return (
     <Box
       sx={{
