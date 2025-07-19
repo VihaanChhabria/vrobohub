@@ -51,7 +51,7 @@ router.get("/", async (req, res) => {
   return res.status(200).json(combined);
 });
 
-router.get("/last_updated", async (req, res) => {
+router.get("/last-updated", async (req, res) => {
   const { event_key } = req.query;
 
   const { data, error } = await supabase
