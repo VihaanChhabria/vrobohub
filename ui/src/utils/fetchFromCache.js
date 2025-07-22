@@ -4,10 +4,18 @@ const fetchFromCache = async (
   dataRoute,
   updateStatusRoute,
   localStorageOrIndexedDB,
-  headers = {}
+  query = {}
 ) => {
+  const queryString = new URLSearchParams(query).toString();
+  const fullDataURL = queryString ? `${dataRoute}?${queryString}` : dataRoute;
+  const fullUpdateStatusURL = queryString
+    ? `${updateStatusRoute}?${queryString}`
+    : updateStatusRoute;
+
   const lastClientUpdate = localStorage.getItem(updateStatusRoute) || null;
-  const lastDBUpdate = await fetch(updateStatusRoute).then((res) => res.text());
+  const lastDBUpdate = await fetch(fullUpdateStatusURL).then((res) =>
+    res.text()
+  );
 
   let data;
 
@@ -20,7 +28,7 @@ const fetchFromCache = async (
     }
   } else {
     // If the client does not have the latest data, fetch the data from the server
-    data = await fetch(dataRoute, headers).then((res) => res.json());
+    data = await fetch(fullDataURL).then((res) => res.json());
 
     // Cache the data locally
     if (localStorageOrIndexedDB) {
