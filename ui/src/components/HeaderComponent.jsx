@@ -18,7 +18,7 @@ const HeaderComponent = () => {
       } else {
         setLoggedIn(false);
       }
-    })
+    });
   }, []);
   return (
     <Box
@@ -40,7 +40,12 @@ const HeaderComponent = () => {
         onClick={() => navigate("/")}
       />
       {loggedIn ? (
-        <Button variant="outlined" startIcon={<Settings />} sx={{ ml: "auto" }}>
+        <Button
+          variant="outlined"
+          startIcon={<Settings />}
+          sx={{ ml: "auto" }}
+          onClick={() => navigate("/settings")}
+        >
           Account Settings
         </Button>
       ) : (
