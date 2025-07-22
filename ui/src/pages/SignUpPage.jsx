@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import supabase from "../services/supabaseClient"
+import supabase from "../services/supabaseClient";
 
 const SignUpPage = () => {
   const navigate = useNavigate();
@@ -29,10 +29,11 @@ const SignUpPage = () => {
 
     const result = await supabase.auth.signUp({
       email,
-      password,    
+      password,
       options: {
         data: {
           team_number: teamNumber,
+          api_key: crypto.randomUUID(),
         },
         emailRedirectTo: window.location.origin + "/login",
       },
@@ -122,3 +123,4 @@ const SignUpPage = () => {
 };
 
 export default SignUpPage;
+

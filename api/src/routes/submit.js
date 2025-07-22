@@ -6,6 +6,20 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   const payload = req.body;
+  const apiKey = req.headers["authorization"]?.replace("Bearer ", "");
+
+  if (!apiKey) {
+    return res.status(401).json({ error: "Unauthorized: Missing API key" });
+  }
+
+  const { data: users, error } = await supabase
+    .from("profiles")
+    .select("*")
+    .eq("api_key", apiKey);
+
+  if (error || users.length === 0) {
+    return res.status(403).json({ error: "Invalid API key", message: error });
+  }
 
   const { isValid, errors } = validateMatchData(payload);
 
@@ -15,12 +29,14 @@ router.post("/", async (req, res) => {
       .json({ error: "Invalid match data", details: errors });
   }
 
-  const { error } = await supabase.from("match_data").insert(payload);
+  const { error: insertError } = await supabase
+    .from("match_data")
+    .insert(payload);
 
-  if (error) {
+  if (insertError) {
     return res.status(500).json({
       error: "Database insert failed",
-      details: error.message,
+      details: insertError.message,
     });
   }
 
