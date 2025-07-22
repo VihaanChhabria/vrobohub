@@ -6,14 +6,14 @@ import SearchResultComponent from "../components/EventPickerComponents/SearchRes
 import fetchFromCache from "../utils/fetchFromCache";
 
 const EventPickerPage = () => {
-  const [scoutedEvents, setScoutedEvents] = useState([]);
   const [searchValue, setSearchValue] = useState("");
+  const [scoutedEvents, setScoutedEvents] = useState([]);
 
   useEffect(() => {
     const fetchScoutedEvents = async () => {
       const data = await fetchFromCache(
         "https://vrobohub-api.onrender.com/events",
-        "https://vrobohub-api.onrender.com/events/last_updated",
+        "https://vrobohub-api.onrender.com/events/last-updated",
         false
       );
 

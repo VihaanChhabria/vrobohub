@@ -3,12 +3,10 @@ import FilterBarComponent from "../components/EventComponents/FilterBarComponent
 import EventInfoComponent from "../components/EventComponents/EventInfoComponent";
 import TableComponent from "../components/EventComponents/TableComponent";
 import { Box } from "@mui/material";
-import scoutingData from "../assets/scouting_data.json";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import fetchTBA from "../utils/fetchTBA";
-import { set, get } from "idb-keyval";
 import fetchFromCache from "../utils/fetchFromCache";
 
 const EventPage = () => {
@@ -20,6 +18,8 @@ const EventPage = () => {
   const [tbaEventMatchesData, setTBAEventMatchesData] = useState([]);
   const [teamInfo, setTeamInfo] = useState({});
   const [eventName, setEventName] = useState("");
+
+  const [scoutingData, setScoutedData] = useState([]);
 
   const sortMatchKey = (key) => {
     const match = key.replace(`${selectedEvent}_`, "");
@@ -90,7 +90,7 @@ const EventPage = () => {
       try {
         const data = await fetchFromCache(
           "https://vrobohub-api.onrender.com/events",
-          "https://vrobohub-api.onrender.com/events/last_updated",
+          "https://vrobohub-api.onrender.com/events/last-updated",
           false
         );
         const event = data.find((event) => event.event_key === selectedEvent);
@@ -104,9 +104,28 @@ const EventPage = () => {
       }
     };
 
+    const fetchScoutingData = async () => {
+      try {
+        const data = await fetchFromCache(
+          "https://vrobohub-api.onrender.com/matches",
+          "https://vrobohub-api.onrender.com/matches/last-updated",
+          false,
+          {
+            event_key: selectedEvent,
+          }
+        );
+
+        setScoutedData(data.data);
+      } catch (error) {
+        console.error("Failed to fetch scouting data:", error);
+        toast.error("Failed to fetch scouting data");
+      }
+    };
+
     fetchMatches();
     fetchTeamInfo();
     fetchEventName();
+    fetchScoutingData();
   }, []);
   return (
     <div>

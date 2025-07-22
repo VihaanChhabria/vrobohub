@@ -5,6 +5,7 @@ import EventPickerPage from "./pages/EventPickerPage";
 import HeaderComponent from "./components/HeaderComponent";
 import LogInPage from "./pages/LogInPage";
 import SignUpPage from "./pages/SignUpPage";
+import SettingsPage from "./pages/SettingsPage";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/event/:event_key" element={<EventPage />} />
         <Route path="/login" element={<LogInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
-
+        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
     </div>
   );
