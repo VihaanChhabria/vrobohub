@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import supabase from "../services/supabaseClient";
+import { ContentCopy } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -9,6 +10,7 @@ import {
   TextField,
   Snackbar,
   Alert,
+  IconButton,
 } from "@mui/material";
 import { toast } from "react-toastify";
 
@@ -17,10 +19,10 @@ const SettingsPage = () => {
   const [user, setUser] = useState({
     email: "Not Found",
     team_number: "Not Found",
+    api_key: "Not Found",
   });
 
   const [newPassword, setNewPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
   useEffect(() => {
     const checkSession = async () => {
@@ -33,6 +35,7 @@ const SettingsPage = () => {
         setUser({
           email: session.user.email,
           team_number: session.user.user_metadata.team_number,
+          api_key: session.user.user_metadata.api_key,
         });
       }
     };
@@ -49,7 +52,40 @@ const SettingsPage = () => {
     }
   };
 
+  const handleNewAPIKey = async () => {
+    const confirmGeneration = window.confirm(
+      "Are you sure you want to generate a new API key? This will invalidate your current API key and you will have to update all of your robots and scripts to use the new one. "
+    );
+
+    if (!confirmGeneration) return;
+
+    const newAPIKey = crypto.randomUUID();
+
+    const { error } = await supabase.auth.updateUser({
+      data: {
+        api_key: newAPIKey,
+      },
+    });
+
+    if (error) {
+      toast.error(error.message);
+    } else {
+      setUser({
+        ...user,
+        api_key: newAPIKey,
+      });
+
+      toast.success("API key updated successfully");
+    }
+  };
+
   const handleSignOut = async () => {
+    const confirmSignOut = window.confirm(
+      "Are you sure you want to sign out? This will log you out of your account and you will need to log back in to access your account settings."
+    );
+
+    if (!confirmSignOut) return;
+
     await supabase.auth.signOut();
     navigate("/");
   };
@@ -58,11 +94,11 @@ const SettingsPage = () => {
     <Box
       sx={{
         minHeight: "75vh",
-        minWidth: "100vw",
+        minWidth: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "5vh",
+        marginTop: "3vh ",
       }}
     >
       <Box
@@ -102,6 +138,32 @@ const SettingsPage = () => {
             disabled={!newPassword}
           >
             Update Password
+          </Button>
+        </Box>
+
+        <Typography variant="subtitle1" gutterBottom mt={4}>
+          API Key:
+          <Box display="flex" alignItems="center">
+            <TextField
+              contentEditable
+              value={user.api_key}
+              variant="outlined"
+              sx={{ mr: 2, width: "40%" }}
+            />
+            <IconButton
+              onClick={() => {
+                navigator.clipboard.writeText(user.api_key);
+                toast.success("API Key copied to clipboard");
+              }}
+            >
+              <ContentCopy />
+            </IconButton>
+          </Box>
+        </Typography>
+
+        <Box mt={2}>
+          <Button variant="contained" onClick={handleNewAPIKey}>
+            Generate New API Key
           </Button>
         </Box>
 

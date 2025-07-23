@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import vrobohubLogo from "../assets/vrobohub_logo.png";
 import React, { useEffect, useState } from "react";
-import { Settings } from "@mui/icons-material";
+import { ArrowBack, Settings } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import supabase from "../services/supabaseClient";
 
@@ -40,14 +40,26 @@ const HeaderComponent = () => {
         onClick={() => navigate("/")}
       />
       {loggedIn ? (
-        <Button
-          variant="outlined"
-          startIcon={<Settings />}
-          sx={{ ml: "auto" }}
-          onClick={() => navigate("/settings")}
-        >
-          Account Settings
-        </Button>
+        window.location.pathname === "/settings" ? (
+          <Button
+            variant="outlined"
+            color="error"
+            startIcon={<ArrowBack />}
+            sx={{ ml: "auto" }}
+            onClick={() => navigate(-1)}
+          >
+            Back
+          </Button>
+        ) : (
+          <Button
+            variant="outlined"
+            startIcon={<Settings />}
+            sx={{ ml: "auto" }}
+            onClick={() => navigate("/settings")}
+          >
+            Account Settings
+          </Button>
+        )
       ) : (
         <Box sx={{ marginLeft: "auto", display: "flex", gap: 3 }}>
           <Button
