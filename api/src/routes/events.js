@@ -29,8 +29,18 @@ router.get("/", async (req, res) => {
           }
         );
 
-        const tbaData = await tbaRes.json();
-        eventName = tbaData.name;
+        if (!tbaRes.ok) {
+          return res
+            .status(404)
+            .json({
+              error: "Failed to fetch from TBA",
+              details: tbaRes.statusText,
+            });
+          eventName = "Unknown Event";
+        } else {
+          const tbaData = await tbaRes.json();
+          eventName = tbaData.name || "Unnamed Event";
+        }
 
         const { error } = await supabase
           .from("all_events")
@@ -47,7 +57,7 @@ router.get("/", async (req, res) => {
 
       return {
         event_key: row.event_key,
-        name: eventName,
+        name: eventName || "Unknown Event",
         scouted_by: row.scouted_by,
       };
     })
