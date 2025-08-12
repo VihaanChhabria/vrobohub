@@ -30,13 +30,13 @@ router.get("/", async (req, res) => {
         );
 
         if (!tbaRes.ok) {
+          eventName = "Unknown Event";
           return res
             .status(404)
             .json({
               error: "Failed to fetch from TBA",
               details: tbaRes.statusText,
             });
-          eventName = "Unknown Event";
         } else {
           const tbaData = await tbaRes.json();
           eventName = tbaData.name || "Unnamed Event";
