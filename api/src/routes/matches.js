@@ -31,22 +31,23 @@ router.get("/", async (req, res) => {
   }
 
   // Merge all rows together
-  const combined = rows.reduce(
-    (acc, row) => {
-      acc.scouted_by = [...new Set([...acc.scouted_by, ...row.scouted_by])];
-      acc.data = [...acc.data, ...row.data];
-      if (new Date(row.created_at) < new Date(acc.created_at)) {
-        acc.created_at = row.created_at;
-      }
-      return acc;
-    },
-    {
-      event_key: event_key,
-      scouted_by: [],
-      data: [],
-      created_at: rows[0].created_at,
-    }
-  );
+  // Flatten all matches and add scouted_by to each match in data
+  const allMatches = [];
+
+  rows.forEach(row => {
+    row.data.forEach(match => {
+      allMatches.push({
+        ...match,
+        scouted_by: row.scouted_by || []
+      });
+    });
+  });
+
+  const combined = {
+    event_key: event_key,
+    created_at: rows[0].created_at,
+    data: allMatches
+  };
 
   return res.status(200).json(combined);
 });
