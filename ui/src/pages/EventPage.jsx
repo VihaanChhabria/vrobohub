@@ -146,6 +146,7 @@ const EventPage = () => {
       <Box sx={{ p: 4 }}>
         <EventInfoComponent matchData={scoutingData} eventName={eventName} />
         <FilterBarComponent
+          eventKey={selectedEvent}
           tbaEventMatchesData={tbaEventMatchesData}
           teamInfo={teamInfo}
           selectedTeams={selectedTeams}
