@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Paper, Typography } from "@mui/material";
 import { Chart } from "react-chartjs-2";
 
-const LineChart = ({
+const TeamSpecificLineChart = ({
   title,
   data,
   chartKey,
@@ -53,5 +53,5 @@ const LineChart = ({
   );
 };
 
-export default LineChart;
+export default TeamSpecificLineChart;
 

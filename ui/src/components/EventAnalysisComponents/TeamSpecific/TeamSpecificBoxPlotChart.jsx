@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Paper, Typography } from "@mui/material";
 import { Chart } from "react-chartjs-2";
 
-const BoxPlotChart = ({
+const TeamSpecificBoxPlotChart = ({
   title,
   data,
   chartKey,
@@ -79,5 +79,5 @@ const BoxPlotChart = ({
   );
 };
 
-export default BoxPlotChart;
+export default TeamSpecificBoxPlotChart;
 

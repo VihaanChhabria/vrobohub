@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { Box, Paper, Typography } from "@mui/material";
 import { Chart } from "react-chartjs-2";
 
-const OverallAnalysisBoxPlot = ({
+const OverallBoxPlot = ({
   scoutingData,
   teamInfo,
   selectedPeriods,
@@ -292,4 +292,4 @@ const OverallAnalysisBoxPlot = ({
   );
 };
 
-export default OverallAnalysisBoxPlot;
+export default OverallBoxPlot;

@@ -6,7 +6,7 @@ import {
   TextField,
 } from "@mui/material";
 
-const TeamSelector = ({ availableTeams, selectedTeam, onTeamChange }) => {
+const TeamSpecificSelector = ({ availableTeams, selectedTeam, onTeamChange }) => {
   return (
     <Paper elevation={1} sx={{ p: 2, mb: 3 }}>
       <FormControl fullWidth>
@@ -34,5 +34,5 @@ const TeamSelector = ({ availableTeams, selectedTeam, onTeamChange }) => {
   );
 };
 
-export default TeamSelector;
+export default TeamSpecificSelector;
 

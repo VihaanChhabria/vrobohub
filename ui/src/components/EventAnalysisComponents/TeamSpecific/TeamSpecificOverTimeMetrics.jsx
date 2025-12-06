@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
-import LineChart from "./LineChart";
+import TeamSpecificLineChart from "./TeamSpecificLineChart";
 
-const OverTimeMetrics = ({ data, selectedTeam }) => {
+const TeamSpecificOverTimeMetrics = ({ data, selectedTeam }) => {
   if (!data) {
     return null;
   }
@@ -24,17 +24,17 @@ const OverTimeMetrics = ({ data, selectedTeam }) => {
           gap: 3,
         }}
       >
-        <LineChart
+        <TeamSpecificLineChart
           title="Total Score Over Time"
           data={data.total}
           chartKey={`line-total-${selectedTeam}`}
         />
-        <LineChart
+        <TeamSpecificLineChart
           title="Teleop Score Over Time"
           data={data.teleop}
           chartKey={`line-teleop-${selectedTeam}`}
         />
-        <LineChart
+        <TeamSpecificLineChart
           title="Auto Score Over Time"
           data={data.auto}
           chartKey={`line-auto-${selectedTeam}`}
@@ -50,12 +50,12 @@ const OverTimeMetrics = ({ data, selectedTeam }) => {
           justifyContent: "center",
         }}
       >
-        <LineChart
+        <TeamSpecificLineChart
           title="Algae Score Over Time"
           data={data.algae}
           chartKey={`line-algae-${selectedTeam}`}
         />
-        <LineChart
+        <TeamSpecificLineChart
           title="Coral Score Over Time"
           data={data.coral}
           chartKey={`line-coral-${selectedTeam}`}
@@ -65,5 +65,5 @@ const OverTimeMetrics = ({ data, selectedTeam }) => {
   );
 };
 
-export default OverTimeMetrics;
+export default TeamSpecificOverTimeMetrics;
 

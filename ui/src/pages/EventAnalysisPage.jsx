@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import EventInfoComponent from "../components/EventComponents/EventInfoComponent";
 import ViewModeToggle from "../components/EventAnalysisComponents/ViewModeToggle";
 import ToggleButtonGroup from "../components/EventAnalysisComponents/ToggleButtonGroup";
-import TeamSpecificAnalysis from "../components/EventAnalysisComponents/TeamSpecificAnalysis";
-import OverallAnalysisBoxPlot from "../components/EventAnalysisComponents/OverallAnalysisBoxPlot";
+import TeamSpecificAnalysis from "../components/EventAnalysisComponents/TeamSpecific/TeamSpecificAnalysis";
+import OverallBoxPlot from "../components/EventAnalysisComponents/Overall/OverallBoxPlot";
 import fetchFromCache from "../utils/fetchFromCache";
 import fetchTBA from "../utils/fetchTBA";
 import { toast } from "react-toastify";
@@ -236,7 +236,7 @@ const EventAnalysisPage = () => {
             exclusive={true}
             ariaLabel="sort by selection"
           />
-          <OverallAnalysisBoxPlot
+          <OverallBoxPlot
             scoutingData={scoutingData}
             teamInfo={teamInfo}
             selectedPeriods={selectedPeriods}

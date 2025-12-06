@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const TeamStatsCards = ({ stats }) => {
+const TeamSpecificStatsCards = ({ stats }) => {
   return (
     <Box sx={{ display: "flex", width: "100%", gap: 2 }}>
       {stats.map((stat) => (
@@ -35,5 +35,5 @@ const TeamStatsCards = ({ stats }) => {
   );
 };
 
-export default TeamStatsCards;
+export default TeamSpecificStatsCards;
 

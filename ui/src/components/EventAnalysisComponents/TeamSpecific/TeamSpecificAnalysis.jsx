@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
 import { Box, Typography } from "@mui/material";
-import TeamSelector from "./TeamSelector";
-import TeamStatsCards from "./TeamStatsCards";
-import BoxPlotChart from "./BoxPlotChart";
-import OverTimeMetrics from "./OverTimeMetrics";
+import TeamSpecificSelector from "./TeamSpecificSelector";
+import TeamSpecificStatsCards from "./TeamSpecificStatsCards";
+import TeamSpecificBoxPlotChart from "./TeamSpecificBoxPlotChart";
+import TeamSpecificOverTimeMetrics from "./TeamSpecificOverTimeMetrics";
 
 const TeamSpecificAnalysis = ({
   selectedTeam,
@@ -430,12 +430,12 @@ const TeamSpecificAnalysis = ({
 
   return (
     <Box>
-      <TeamSelector
+      <TeamSpecificSelector
         availableTeams={availableTeams}
         selectedTeam={selectedTeam}
         onTeamChange={onTeamChange}
       />
-      {selectedTeam && <TeamStatsCards stats={teamStats} />}
+      {selectedTeam && <TeamSpecificStatsCards stats={teamStats} />}
 
       {!selectedTeam && (
         <Box
@@ -458,28 +458,28 @@ const TeamSpecificAnalysis = ({
             Performance
           </Typography>
           <Box sx={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
-            <BoxPlotChart
+            <TeamSpecificBoxPlotChart
               title="Teleop Coral Placement Distribution"
               data={boxPlotData}
               chartKey={`boxplot-teleop-coral-${selectedTeam}`}
               xAxisTitle="Level"
               yAxisTitle="Count"
             />
-            <BoxPlotChart
+            <TeamSpecificBoxPlotChart
               title="Teleop Algae Placement Distribution"
               data={algaeBoxPlotData}
               chartKey={`boxplot-teleop-algae-${selectedTeam}`}
               xAxisTitle="Type"
               yAxisTitle="Count"
             />
-            <BoxPlotChart
+            <TeamSpecificBoxPlotChart
               title="Auto Coral Placement Distribution"
               data={autoCoralBoxPlotData}
               chartKey={`boxplot-auto-coral-${selectedTeam}`}
               xAxisTitle="Level"
               yAxisTitle="Count"
             />
-            <BoxPlotChart
+            <TeamSpecificBoxPlotChart
               title="Auto Algae Placement Distribution"
               data={autoAlgaeBoxPlotData}
               chartKey={`boxplot-auto-algae-${selectedTeam}`}
@@ -491,7 +491,7 @@ const TeamSpecificAnalysis = ({
           <Typography variant="h4" sx={{ mt: 4, mb: 3 }}>
             Over Time Metrics
           </Typography>
-          <OverTimeMetrics
+          <TeamSpecificOverTimeMetrics
             data={overTimeMetricsData}
             selectedTeam={selectedTeam}
           />
