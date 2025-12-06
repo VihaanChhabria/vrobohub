@@ -19,7 +19,7 @@ const EventPage = () => {
   const [teamInfo, setTeamInfo] = useState({});
   const [eventName, setEventName] = useState("");
 
-  const [scoutingData, setScoutedData] = useState([]);
+  const [scoutingData, setScoutingData] = useState([]);
 
   const sortMatchKey = (key) => {
     const match = key.replace(`${selectedEvent}_`, "");
@@ -123,7 +123,7 @@ const EventPage = () => {
         console.log("Fetched scouting data:", data);
 
         await new Promise((resolve) => {
-          setScoutedData(data.data);
+          setScoutingData(data.data);
           setTimeout(resolve, 0);
         });
       } catch (error) {
@@ -144,7 +144,7 @@ const EventPage = () => {
   return (
     <div>
       <Box sx={{ p: 4 }}>
-        <EventInfoComponent matchData={scoutingData} eventName={eventName} />
+        <EventInfoComponent matchDataLength={scoutingData.length} eventName={eventName} />
         <FilterBarComponent
           eventKey={selectedEvent}
           tbaEventMatchesData={tbaEventMatchesData}

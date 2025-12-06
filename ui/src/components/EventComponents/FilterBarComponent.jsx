@@ -106,6 +106,17 @@ const FilterBarComponent = ({
           >
             Export Data
           </Button>
+
+          <Button
+            variant="contained"
+            startIcon={<Download />}
+            onClick={() => {
+              // TODO: Implement export functionality
+              navigate("/analysis/" + eventKey);
+            }}
+          >
+            View Analysis
+          </Button>
         </Box>
       </Box>
     </Paper>

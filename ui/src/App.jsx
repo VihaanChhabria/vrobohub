@@ -7,6 +7,7 @@ import LogInPage from "./pages/LogInPage";
 import SignUpPage from "./pages/SignUpPage";
 import SettingsPage from "./pages/SettingsPage";
 import ExportPage from "./pages/ExportPage";
+import EventAnalysisPage from "./pages/EventAnalysisPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/export/:event_key" element={<ExportPage />} />
+        <Route path="/analysis/:event_key" element={<EventAnalysisPage />} />
       </Routes>
     </div>
   );

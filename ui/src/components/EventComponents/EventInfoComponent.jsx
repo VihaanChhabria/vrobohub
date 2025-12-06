@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const EventInfoComponent = ({ matchData, eventName }) => {
+const EventInfoComponent = ({ matchDataLength = null, eventName }) => {
   const navigate = useNavigate();
   return (
     <div>
@@ -36,9 +36,11 @@ const EventInfoComponent = ({ matchData, eventName }) => {
           </Button>
         </Box>
 
-        <Typography variant="body1" color="text.secondary">
-          Fetched {matchData.length} scouting records
-        </Typography>
+        {matchDataLength === null ? null :
+          <Typography variant="body1" color="text.secondary">
+            Fetched {matchDataLength} scouting records
+          </Typography>
+        }
       </Box>
     </div>
   );
