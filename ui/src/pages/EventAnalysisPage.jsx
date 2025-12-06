@@ -2,7 +2,9 @@ import React, { useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import EventInfoComponent from "../components/EventComponents/EventInfoComponent";
 import ViewModeToggle from "../components/EventAnalysisComponents/ViewModeToggle";
+import ToggleButtonGroup from "../components/EventAnalysisComponents/ToggleButtonGroup";
 import TeamSpecificAnalysis from "../components/EventAnalysisComponents/TeamSpecificAnalysis";
+import OverallAnalysisBoxPlot from "../components/EventAnalysisComponents/OverallAnalysisBoxPlot";
 import fetchFromCache from "../utils/fetchFromCache";
 import fetchTBA from "../utils/fetchTBA";
 import { toast } from "react-toastify";
@@ -46,6 +48,9 @@ const EventAnalysisPage = () => {
   const [teamInfo, setTeamInfo] = useState({});
   const [availableTeams, setAvailableTeams] = useState([]);
   const [teamRecord, setTeamRecord] = useState({ wins: 0, losses: 0, ties: 0 });
+  const [selectedPeriods, setSelectedPeriods] = useState(["teleop", "auto"]);
+  const [selectedCategory, setSelectedCategory] = useState("L1");
+  const [sortBy, setSortBy] = useState("average");
   useEffect(() => {
     const fetchEventName = async () => {
       try {
@@ -186,6 +191,59 @@ const EventAnalysisPage = () => {
           teamRecord={teamRecord}
           selectedEvent={selectedEvent}
         />
+      )}
+      {viewMode === "overall" && (
+        <Box>
+          <ToggleButtonGroup
+            value={selectedPeriods}
+            onChange={setSelectedPeriods}
+            options={[
+              { value: "teleop", label: "Teleop", ariaLabel: "teleop" },
+              { value: "auto", label: "Auto", ariaLabel: "auto" },
+            ]}
+            exclusive={false}
+            ariaLabel="period selection"
+          />
+          <ToggleButtonGroup
+            value={selectedCategory}
+            onChange={setSelectedCategory}
+            options={[
+              { value: "L1", label: "L1", ariaLabel: "L1" },
+              { value: "L2", label: "L2", ariaLabel: "L2" },
+              { value: "L3", label: "L3", ariaLabel: "L3" },
+              { value: "L4", label: "L4", ariaLabel: "L4" },
+              {
+                value: "processor",
+                label: "Processor",
+                ariaLabel: "processor",
+              },
+              { value: "net_shot", label: "Net Shot", ariaLabel: "net shot" },
+            ]}
+            exclusive={true}
+            ariaLabel="category selection"
+          />
+          <ToggleButtonGroup
+            value={sortBy}
+            onChange={setSortBy}
+            options={[
+              { value: "average", label: "Average", ariaLabel: "average" },
+              { value: "median", label: "Median", ariaLabel: "median" },
+              { value: "min", label: "Min", ariaLabel: "min" },
+              { value: "max", label: "Max", ariaLabel: "max" },
+              { value: "q1", label: "Q1", ariaLabel: "quartile 1" },
+              { value: "q3", label: "Q3", ariaLabel: "quartile 3" },
+            ]}
+            exclusive={true}
+            ariaLabel="sort by selection"
+          />
+          <OverallAnalysisBoxPlot
+            scoutingData={scoutingData}
+            teamInfo={teamInfo}
+            selectedPeriods={selectedPeriods}
+            selectedCategory={selectedCategory}
+            sortBy={sortBy}
+          />
+        </Box>
       )}
     </Box>
   );
