@@ -3,6 +3,7 @@ import submitRoute from "./routes/submit.js";
 import validateRoute from "./routes/validate.js";
 import matchesRoute from "./routes/matches.js";
 import eventsRoute from "./routes/events.js";
+import pingRoute from "./routes/ping.js";
 import cors from "cors";
 
 const app = express();
@@ -12,10 +13,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("RoboHub API");
 });
-app.get("/ping", (req, res) => {
-  res.sendStatus(200);
-});
-
+app.get("/ping", pingRoute);
 app.use("/submit", submitRoute);
 app.use("/validate", validateRoute);
 app.use("/matches", matchesRoute);
