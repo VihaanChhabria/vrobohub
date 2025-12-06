@@ -44,6 +44,8 @@ const EventPage = () => {
           `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`
         );
 
+        console.log("selectedMatches:", selectedMatches);
+
         const formatted = data
           .map((match) => ({
             match: match.key.replace(`${selectedEvent}_`, ""),
@@ -55,6 +57,9 @@ const EventPage = () => {
             ),
             redScore: match.alliances.red.score,
             blueScore: match.alliances.blue.score,
+            scouted_by: selectedMatches.filter((m) => m.match_key === match.key)
+              .map((m) => m.scouted_by)
+              .flat(),
           }))
           .sort((a, b) => {
             const ak = sortMatchKey(a.match);
@@ -115,23 +120,33 @@ const EventPage = () => {
           }
         );
 
-        setScoutedData(data.data);
+        console.log("Fetched scouting data:", data);
+
+        await new Promise((resolve) => {
+          setScoutedData(data.data);
+          setTimeout(resolve, 0);
+        });
       } catch (error) {
         console.error("Failed to fetch scouting data:", error);
         toast.error("Failed to fetch scouting data");
       }
     };
 
-    fetchMatches();
     fetchTeamInfo();
     fetchEventName();
-    fetchScoutingData();
+    const fetchAllData = async () => {
+      await fetchScoutingData();
+      console.log("Scouting data after fetch:", scoutingData);
+      await fetchMatches();
+    };
+    fetchAllData();
   }, []);
   return (
     <div>
       <Box sx={{ p: 4 }}>
         <EventInfoComponent matchData={scoutingData} eventName={eventName} />
         <FilterBarComponent
+          eventKey={selectedEvent}
           tbaEventMatchesData={tbaEventMatchesData}
           teamInfo={teamInfo}
           selectedTeams={selectedTeams}

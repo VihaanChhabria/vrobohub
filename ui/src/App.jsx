@@ -6,6 +6,7 @@ import HeaderComponent from "./components/HeaderComponent";
 import LogInPage from "./pages/LogInPage";
 import SignUpPage from "./pages/SignUpPage";
 import SettingsPage from "./pages/SettingsPage";
+import ExportPage from "./pages/ExportPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<LogInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/export/:event_key" element={<ExportPage />} />
       </Routes>
     </div>
   );

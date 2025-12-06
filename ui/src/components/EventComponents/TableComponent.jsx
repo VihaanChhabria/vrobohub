@@ -193,17 +193,12 @@ const TableComponent = ({
                     });
 
                     const isFullyScouted = missingTeams.length === 0;
-                    
-                    const scoutedByTeams = Array.from(
-                      new Set(
-                      scoutingData
-                        .filter(sd => sd.match_number == row.match)
-                        .flatMap(sd => sd.scouted_by || [])
-                      )
-                    );
+
 
                     const tooltipText = isFullyScouted
-                      ? `All teams in match scouted by ${scoutedByTeams.join(", ")}`
+                      ? `All teams in match scouted by ${row.scouted_by.join(
+                          ", "
+                        )}`
                       : `Missing: ${missingTeams.join(", ")}`;
 
                     return (

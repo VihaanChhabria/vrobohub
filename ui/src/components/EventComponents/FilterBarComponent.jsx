@@ -14,8 +14,10 @@ import {
 } from "@mui/material";
 import { Download, Clear } from "@mui/icons-material";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const FilterBarComponent = ({
+  eventKey,
   tbaEventMatchesData,
   teamInfo,
   selectedTeams,
@@ -23,6 +25,8 @@ const FilterBarComponent = ({
   selectedMatches,
   setSelectedMatches,
 }) => {
+  const navigate = useNavigate();
+
   const uniqueTeams = Array.from(
     new Set(
       tbaEventMatchesData.flatMap((match) => [...match.red, ...match.blue])
@@ -91,11 +95,13 @@ const FilterBarComponent = ({
           >
             Clear Filters
           </Button>
+
           <Button
             variant="contained"
             startIcon={<Download />}
             onClick={() => {
               // TODO: Implement export functionality
+              navigate("/export/" + eventKey);
             }}
           >
             Export Data
