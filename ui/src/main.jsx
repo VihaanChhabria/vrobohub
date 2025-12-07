@@ -8,6 +8,9 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+// Ensure Chart.js controllers/plugins are registered before any chart mounts
+import "./chartSetup";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>

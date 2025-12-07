@@ -9,34 +9,6 @@ import fetchFromCache from "../utils/fetchFromCache";
 import fetchTBA from "../utils/fetchTBA";
 import { toast } from "react-toastify";
 import { Box, Typography } from "@mui/material";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  Title,
-  Tooltip,
-  Legend,
-  PointElement,
-  LineElement,
-} from "chart.js";
-import {
-  BoxPlotController,
-  BoxAndWiskers,
-} from "@sgratzl/chartjs-chart-boxplot";
-
-// Register boxplot controller and required components
-// This must happen before any Chart components are rendered
-ChartJS.register(
-  BoxPlotController,
-  BoxAndWiskers,
-  CategoryScale,
-  LinearScale,
-  Title,
-  Tooltip,
-  Legend,
-  PointElement,
-  LineElement
-);
 
 const EventAnalysisPage = () => {
   const { event_key: selectedEvent } = useParams();
