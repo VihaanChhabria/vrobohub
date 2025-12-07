@@ -1,10 +1,24 @@
 import React, { useEffect } from "react";
 import { Box, Paper, Typography } from "@mui/material";
-import { Chart as ChartJS, LineElement } from "chart.js";
+import { 
+  Chart as ChartJS, 
+  LineElement, 
+  CategoryScale, 
+  LinearScale, 
+  Title, Tooltip, 
+  PointElement 
+} from "chart.js";
 import { Chart } from "react-chartjs-2";
 
 // Ensure LineElement is registered
-ChartJS.register(LineElement);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  Title,
+  Tooltip,
+  PointElement,
+  LineElement
+);
 
 const TeamSpecificLineChart = ({
   title,
