@@ -2,17 +2,12 @@ import React from "react";
 import {
   Box,
   FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
   TextField,
   Button,
   Paper,
-  Typography,
-  InputAdornment,
   Autocomplete,
 } from "@mui/material";
-import { Download, Clear } from "@mui/icons-material";
+import { Download, Clear, AutoGraph } from "@mui/icons-material";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -99,6 +94,7 @@ const FilterBarComponent = ({
           <Button
             variant="contained"
             startIcon={<Download />}
+            color="primary"
             onClick={() => {
               // TODO: Implement export functionality
               navigate("/export/" + eventKey);
@@ -109,7 +105,8 @@ const FilterBarComponent = ({
 
           <Button
             variant="contained"
-            startIcon={<Download />}
+            startIcon={<AutoGraph />}
+            color="secondary"
             onClick={() => {
               // TODO: Implement export functionality
               navigate("/analysis/" + eventKey);
