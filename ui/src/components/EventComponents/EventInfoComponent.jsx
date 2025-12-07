@@ -29,7 +29,7 @@ const EventInfoComponent = ({ matchDataLength = null, eventName }) => {
             color="error"
             startIcon={<ArrowBack />}
             onClick={() => {
-              navigate("/")
+              navigate(-1)
             }}
           >
             Back
