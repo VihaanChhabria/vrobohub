@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Typography,
@@ -8,11 +8,11 @@ import {
   Stack,
   Paper,
   Divider,
-  Chip,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import fetchTBA from "../utils/fetchTBA";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -26,16 +26,38 @@ const VisuallyHiddenInput = styled("input")({
   width: 1,
 });
 
-const eventOptions = [
-  { label: "Test Event 1", key: "test-event-1" },
-  { label: "Test Event 2", key: "test-event-2" },
-  { label: "Test Event 3", key: "test-event-3" },
-];
-
 const NewEventPage = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [pitFiles, setPitFiles] = useState(null);
   const [matchFiles, setMatchFiles] = useState(null);
+  const [eventOptions, setEventOptions] = useState([]);
+  const [isLoadingEvents, setIsLoadingEvents] = useState(false);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      setIsLoadingEvents(true);
+      try {
+        const currentYear = new Date().getFullYear();
+        const data = await fetchTBA(
+          `https://www.thebluealliance.com/api/v3/events/${currentYear}/simple`
+        );
+
+        const options =
+          data?.map((event) => ({
+            key: event.key,
+            label: `${event.year} ${event.name} (${event.key})`,
+          })) ?? [];
+
+        setEventOptions(options);
+      } catch (error) {
+        console.error("Failed to fetch events from TBA:", error);
+      } finally {
+        setIsLoadingEvents(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   const isSubmitEnabled =
     !!selectedEvent && pitFiles?.length > 0 && matchFiles?.length > 0;
@@ -64,13 +86,8 @@ const NewEventPage = () => {
         }}
       >
         <Box textAlign="center">
-          <Typography
-            variant="h5"
-            component="h1"
-            fontWeight="bold"
-            gutterBottom
-          >
-            Create New Event
+          <Typography variant="h5" component="h1" fontWeight="bold" gutterBottom>
+            Input the Following Data to Create an Event
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Select an event and upload the required scouting data to proceed.
@@ -82,6 +99,7 @@ const NewEventPage = () => {
           value={selectedEvent}
           onChange={(_, newValue) => setSelectedEvent(newValue)}
           getOptionLabel={(option) => option.label || ""}
+          loading={isLoadingEvents}
           renderInput={(params) => (
             <TextField
               {...params}
