@@ -17,3 +17,5 @@ router.get("/", async (req, res) => {
 
   return res.status(200).json(rows[0].ping);
 });
+
+export default router;
