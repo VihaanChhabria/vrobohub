@@ -112,10 +112,24 @@ const NewEventPage = () => {
   const isSubmitEnabled =
     !!selectedEvent && pitFiles?.length > 0 && matchFiles?.length > 0;
 
-    useEffect(() => {
-      console.log(processedPitData);
-      console.log(processedMatchData);
-    }, [processedPitData, processedMatchData]);
+  const handleSubmit = () => {
+    const combined = {
+      pitData: processedPitData,
+      matchData: processedMatchData,
+    };
+    const blob = new Blob([JSON.stringify(combined, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `event-data-${selectedEvent?.key ?? "export"}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <Box
       sx={{
@@ -251,6 +265,7 @@ const NewEventPage = () => {
           color="primary"
           disabled={!isSubmitEnabled}
           fullWidth
+          onClick={handleSubmit}
           sx={{ mt: 2, py: 1.5, fontWeight: "bold", borderRadius: 2 }}
         >
           Submit Event Data

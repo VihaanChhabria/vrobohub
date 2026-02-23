@@ -1,5 +1,29 @@
 const DEFAULT_MAX_HOPPER_SIZE = 100;
 
+/** Convert string "true"/"false" (case-insensitive) to boolean; leave other values unchanged. */
+const coerceStringToBoolean = (val) => {
+  if (typeof val !== "string") return val;
+  const lower = val.trim().toLowerCase();
+  if (lower === "true") return true;
+  if (lower === "false") return false;
+  return val;
+};
+
+/** Recursively coerce "true"/"false" strings to booleans in plain objects and arrays. */
+const coerceStringBooleansIn = (obj) => {
+  if (obj === null || typeof obj !== "object") {
+    return coerceStringToBoolean(obj);
+  }
+  if (Array.isArray(obj)) {
+    return obj.map((item) => coerceStringBooleansIn(item));
+  }
+  const result = {};
+  for (const [k, v] of Object.entries(obj)) {
+    result[k] = coerceStringBooleansIn(v);
+  }
+  return result;
+};
+
 const safeParseJson = (value) => {
   if (value == null || value === "") return null;
   if (typeof value !== "string") return value;
@@ -188,7 +212,7 @@ const transformRow = (row, teamToMaxHopperSize = null) => {
     );
   }
 
-  return result;
+  return coerceStringBooleansIn(result);
 };
 
 /**
