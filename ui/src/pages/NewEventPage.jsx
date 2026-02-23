@@ -13,6 +13,11 @@ import { styled } from "@mui/material/styles";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import fetchTBA from "../utils/fetchTBA";
+import {
+  parseCsvFile,
+  transformScoutingRows,
+  buildTeamToMaxHopperSize,
+} from "../utils/transformScoutingData";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -32,6 +37,8 @@ const NewEventPage = () => {
   const [matchFiles, setMatchFiles] = useState(null);
   const [eventOptions, setEventOptions] = useState([]);
   const [isLoadingEvents, setIsLoadingEvents] = useState(false);
+  const [processedPitData, setProcessedPitData] = useState([]);
+  const [processedMatchData, setProcessedMatchData] = useState([]);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -59,9 +66,56 @@ const NewEventPage = () => {
     fetchEvents();
   }, []);
 
+  useEffect(() => {
+    const processFiles = async () => {
+      if (!pitFiles?.length && !matchFiles?.length) {
+        setProcessedPitData([]);
+        setProcessedMatchData([]);
+        return;
+      }
+
+      let allPitRows = [];
+      let allMatchRows = [];
+
+      if (pitFiles?.length) {
+        for (const file of pitFiles) {
+          try {
+            const rows = await parseCsvFile(file);
+            allPitRows = allPitRows.concat(rows);
+          } catch (err) {
+            console.error("Failed to parse pit file:", file.name, err);
+          }
+        }
+      }
+
+      if (matchFiles?.length) {
+        for (const file of matchFiles) {
+          try {
+            const rows = await parseCsvFile(file);
+            allMatchRows = allMatchRows.concat(rows);
+          } catch (err) {
+            console.error("Failed to parse match file:", file.name, err);
+          }
+        }
+      }
+
+      const teamToMaxHopperSize = buildTeamToMaxHopperSize(allPitRows);
+      setProcessedPitData(transformScoutingRows(allPitRows));
+      setProcessedMatchData(
+        transformScoutingRows(allMatchRows, { teamToMaxHopperSize })
+      );
+    };
+
+    processFiles();
+  }, [pitFiles, matchFiles]);
+
   const isSubmitEnabled =
     !!selectedEvent && pitFiles?.length > 0 && matchFiles?.length > 0;
 
+    useEffect(() => {
+      console.log(processedPitData);
+      console.log(processedMatchData);
+    }, [processedPitData, processedMatchData]);
   return (
     <Box
       sx={{
