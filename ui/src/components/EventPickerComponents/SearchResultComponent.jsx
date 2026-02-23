@@ -135,6 +135,9 @@ const SearchResultComponent = ({ scoutedEvents, searchValue }) => {
               alignItems: "center",
               gap: 1,
             }}
+            onClick={() => {
+              navigate("/new-event");
+            }}
           >
             <Typography variant="body1">Can't Find the Event?</Typography>
             <Typography variant="h5" component="h1" fontWeight="bold">

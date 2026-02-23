@@ -8,6 +8,7 @@ import SignUpPage from "./pages/SignUpPage";
 import SettingsPage from "./pages/SettingsPage";
 import ExportPage from "./pages/ExportPage";
 import EventAnalysisPage from "./pages/EventAnalysisPage";
+import NewEventPage from "./pages/NewEventPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/export/:event_key" element={<ExportPage />} />
         <Route path="/analysis/:event_key" element={<EventAnalysisPage />} />
+        <Route path="/new-event" element={<NewEventPage />} />
       </Routes>
     </div>
   );
