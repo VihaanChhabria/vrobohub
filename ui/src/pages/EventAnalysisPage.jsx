@@ -29,7 +29,7 @@ const EventAnalysisPage = () => {
         const data = await fetchFromCache(
           "https://vrobohub-api.onrender.com/events",
           "https://vrobohub-api.onrender.com/events/last-updated",
-          false
+          false,
         );
         const event = data.find((event) => event.event_key === selectedEvent);
 
@@ -49,7 +49,7 @@ const EventAnalysisPage = () => {
           false,
           {
             event_key: selectedEvent,
-          }
+          },
         );
 
         console.log("Fetched scouting data:", data);
@@ -67,7 +67,7 @@ const EventAnalysisPage = () => {
     const fetchTeamInfo = async () => {
       try {
         const data = await fetchTBA(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`,
         );
 
         // Convert the response to the desired format
@@ -128,7 +128,7 @@ const EventAnalysisPage = () => {
 
       try {
         const data = await fetchTBA(
-          `https://www.thebluealliance.com/api/v3/team/frc${selectedTeam}/event/${selectedEvent}/status`
+          `https://www.thebluealliance.com/api/v3/team/frc${selectedTeam}/event/${selectedEvent}/status`,
         );
 
         if (data && data.qual && data.qual.ranking) {
@@ -167,6 +167,7 @@ const EventAnalysisPage = () => {
       {viewMode === "overall" && (
         <Box>
           <ToggleButtonGroup
+            // allow empty array so user can deselect both periods
             value={selectedPeriods}
             onChange={setSelectedPeriods}
             options={[

@@ -23,7 +23,7 @@ const OverallBoxPlot = ({
 
     // Get all unique teams from scouting data
     const teams = Array.from(
-      new Set(scoutingData.map((match) => match.team_number))
+      new Set(scoutingData.map((match) => match.team_number)),
     ).filter((team) => team !== null && team !== undefined);
 
     if (teams.length === 0) {
@@ -63,7 +63,7 @@ const OverallBoxPlot = ({
     // Calculate data for each team
     const teamDataMap = teams.map((teamNum) => {
       const teamMatches = scoutingData.filter(
-        (match) => match.team_number === teamNum
+        (match) => match.team_number === teamNum,
       );
 
       // Collect values from selected periods
@@ -74,7 +74,7 @@ const OverallBoxPlot = ({
           const values = teamMatches
             .map((m) => m[field])
             .filter(
-              (v) => v !== null && v !== undefined && typeof v === "number"
+              (v) => v !== null && v !== undefined && typeof v === "number",
             );
           allValues.push(...values);
         }
@@ -143,18 +143,10 @@ const OverallBoxPlot = ({
     };
   }, [scoutingData, teamInfo, selectedPeriods, selectedCategory, sortBy]);
 
-  if (!boxPlotData) {
-    return null;
-  }
-
-  const periodLabel =
-    selectedPeriods.length === 2
-      ? "Teleop + Auto"
-      : selectedPeriods[0] === "teleop"
-      ? "Teleop"
-      : "Auto";
-
   // Calculate max values for each team to position team number labels
+  // this hook must always be called to keep hooks consistent, even if
+  // boxPlotData is null.  We'll return an empty object when there's
+  // nothing to calculate.
   const maxValues = useMemo(() => {
     if (!boxPlotData) return {};
     const maxMap = {};
@@ -166,6 +158,17 @@ const OverallBoxPlot = ({
     });
     return maxMap;
   }, [boxPlotData]);
+
+  if (!boxPlotData) {
+    return null;
+  }
+
+  const periodLabel =
+    selectedPeriods.length === 2
+      ? "Teleop + Auto"
+      : selectedPeriods[0] === "teleop"
+        ? "Teleop"
+        : "Auto";
 
   // Calculate total width: 120px per team
   const boxPlotWidth = 100;
@@ -187,7 +190,7 @@ const OverallBoxPlot = ({
         <Box sx={{ width: `${totalWidth}px`, height: "100%" }}>
           <Chart
             key={`overall-boxplot-${selectedCategory}-${selectedPeriods.join(
-              "-"
+              "-",
             )}-${sortBy}`}
             type="boxplot"
             data={boxPlotData}
