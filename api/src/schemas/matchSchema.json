@@ -2,78 +2,133 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "pitData": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "scouterInitials": { "type": "string" },
-          "teamNumber": { "type": "string" },
-          "drivetrainType": { "type": "string" },
-          "weight": { "type": "string" },
-          "climbingAbility": { "type": "string" },
-          "maxHopperSize": { "type": "string" },
-          "trenchDriveAbility": { "type": "boolean" },
-          "rotatableShooter": { "type": "boolean" },
-          "intakeFromDepot": { "type": "boolean" },
-          "intakeFromOutpost": { "type": "boolean" },
-          "photoTaken": { "type": "boolean" },
-          "imageSrc": { "type": "string" }
+    "eventKey": { "type": "string" },
+    "scoutedBy": { "type": "array", "items": { "type": "string" } },
+    "data": {
+      "type": "object",
+      "properties": {
+        "pitData": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scouterInitials": { "type": "string" },
+              "teamNumber": { "type": "number" },
+              "drivetrainType": { "type": "string" },
+              "weight": { "type": "number" },
+              "climbingAbility": { "type": "string" },
+              "maxFuelStorage": { "type": "number" },
+              "trenchDriveAbility": { "type": "boolean" },
+              "rotatableShooter": { "type": "boolean" },
+              "intakeFromDepot": { "type": "boolean" },
+              "intakeFromOutpost": { "type": "boolean" },
+              "photoTaken": { "type": "boolean" },
+              "imageSrc": { "type": "string" }
+            },
+            "required": [
+              "scouterInitials",
+              "teamNumber",
+              "drivetrainType",
+              "weight",
+              "climbingAbility",
+              "maxFuelStorage",
+              "trenchDriveAbility",
+              "rotatableShooter",
+              "intakeFromDepot",
+              "intakeFromOutpost",
+              "photoTaken",
+              "imageSrc"
+            ],
+            "additionalProperties": false
+          }
         },
-        "additionalProperties": false
-      }
-    },
-    "matchData": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "matchNumber": { "type": "string" },
-          "alliance": { "type": "string" },
-          "scouterInitials": { "type": "string" },
-          "selectTeam": { "type": "string" },
-          "autoRobotPositions": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "x": { "type": "number" },
-                "y": { "type": "number" },
-                "driveType": { "type": "string" },
-                "shotInfo": {
+        "matchData": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "matchNumber": { "type": "number" },
+              "alliance": { "type": "string" },
+              "scouterInitials": { "type": "string" },
+              "selectTeam": { "type": "number" },
+              "autoRobotPositions": {
+                "type": "array",
+                "items": {
                   "type": "object",
                   "properties": {
-                    "fuelShot": { "type": "number" }
+                    "x": { "type": "number" },
+                    "y": { "type": "number" },
+                    "driveType": { "type": "string" },
+                    "timeSeconds": { "type": "number" },
+                    "shotInfo": {
+                      "type": "object",
+                      "properties": {
+                        "hopperPercent": { "type": "string" },
+                        "shotsPercent": { "type": "string" }
+                      },
+                      "additionalProperties": false
+                    }
                   },
+                  "required": ["x", "y", "driveType", "timeSeconds"],
                   "additionalProperties": false
                 }
               },
-              "additionalProperties": false
-            }
-          },
-          "fuelShotAndSourceInfo": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "source": { "type": "string" },
-                "fuelShot": { "type": "number" }
+              "fuelShotAndSourceInfo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source": { "type": "string" },
+                    "hopperPercent": { "type": "string" },
+                    "shotsPercent": { "type": "string" },
+                    "timeSeconds": { "type": "number" }
+                  },
+                  "required": [
+                    "source",
+                    "hopperPercent",
+                    "shotsPercent",
+                    "timeSeconds"
+                  ],
+                  "additionalProperties": false
+                }
               },
-              "additionalProperties": false
-            }
-          },
-          "comments": { "type": "string" },
-          "broken": { "type": "boolean" },
-          "brokenDownTime": { "type": "string" },
-          "playedDefense": { "type": "boolean" },
-          "defenseTime": { "type": "string" },
-          "defenseSkill": { "type": "string" },
-          "playedDefenseOn": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
+              "climbPosition": { "type": "string" },
+              "climbTimeSeconds": { "type": "number" },
+              "climbFailed": { "type": "boolean" },
+              "comments": { "type": "string" },
+              "broken": { "type": "boolean" },
+              "brokenDownTime": { "type": "string" },
+              "playedDefense": { "type": "boolean" },
+              "defenseTime": { "type": "string" },
+              "defenseSkill": { "type": "string" },
+              "playedDefenseOn": { "type": "number" }
+            },
+            "required": [
+              "matchNumber",
+              "alliance",
+              "scouterInitials",
+              "selectTeam",
+              "autoRobotPositions",
+              "fuelShotAndSourceInfo",
+              "climbPosition",
+              "climbTimeSeconds",
+              "climbFailed",
+              "comments",
+              "broken",
+              "brokenDownTime",
+              "playedDefense",
+              "defenseTime",
+              "defenseSkill",
+              "playedDefenseOn"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["pitData", "matchData"],
+      "additionalProperties": false
     }
   },
-  "required": ["pitData", "matchData"],
+  "required": ["eventKey", "scoutedBy", "data"],
   "additionalProperties": false
 }

@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
     return res.status(403).json({ error: "Invalid API key", message: error });
   }
 
-  const { isValid, errors } = validateMatchData(payload);
+  const { isValid, errors } = validateMatchData(payload.data);
 
   if (!isValid) {
     return res
@@ -41,7 +41,7 @@ router.post("/", async (req, res) => {
   }
 
   res.status(201).json({
-    message: `${payload.data.length} matches submitted successfully`,
+    message: `${payload.data.matchData.length} matches and ${payload.data.pitData.length} pit teams submitted successfully for event ${payload.eventKey}`,
   });
 });
 
