@@ -141,8 +141,8 @@ const NewEventPage = () => {
   const handleSubmit = async () => {
     if (!selectedEvent || !user?.api_key) return;
     const payload = {
-      eventKey: selectedEvent.key,
-      scoutedBy: [user.team_number],
+      event_key: selectedEvent.key,
+      scouted_by: [user.team_number],
       data: {
         pitData: processedPitData,
         matchData: processedMatchData,
