@@ -54,7 +54,7 @@ const SettingsPage = () => {
 
   const handleNewAPIKey = async () => {
     const confirmGeneration = window.confirm(
-      "Are you sure you want to generate a new API key? This will invalidate your current API key and you will have to update all of your robots and scripts to use the new one. "
+      "Are you sure you want to generate a new API key? This will invalidate your current API key and you will have to update all of your robots and scripts to use the new one. ",
     );
 
     if (!confirmGeneration) return;
@@ -81,7 +81,7 @@ const SettingsPage = () => {
 
   const handleSignOut = async () => {
     const confirmSignOut = window.confirm(
-      "Are you sure you want to sign out? This will log you out of your account and you will need to log back in to access your account settings."
+      "Are you sure you want to sign out? This will log you out of your account and you will need to log back in to access your account settings.",
     );
 
     if (!confirmSignOut) return;

@@ -25,3 +25,5 @@ dist-ssr
 
 .env
 /ui/.env
+# Local Netlify folder
+.netlify

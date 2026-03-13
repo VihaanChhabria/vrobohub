@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
     return res.status(403).json({ error: "Invalid API key", message: error });
   }
 
-  const { isValid, errors } = validateMatchData(payload.data);
+  const { isValid, errors } = validateMatchData(payload);
 
   if (!isValid) {
     return res

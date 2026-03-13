@@ -18,6 +18,8 @@ import {
   transformScoutingRows,
   buildTeamToMaxHopperSize,
 } from "../utils/transformScoutingData";
+import { useNavigate } from "react-router-dom";
+import supabase from "../services/supabaseClient";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -32,6 +34,12 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 const NewEventPage = () => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState({
+    email: "Not Found",
+    team_number: "Not Found",
+    api_key: "Not Found",
+  });
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [pitFiles, setPitFiles] = useState(null);
   const [matchFiles, setMatchFiles] = useState(null);
@@ -41,12 +49,30 @@ const NewEventPage = () => {
   const [processedMatchData, setProcessedMatchData] = useState([]);
 
   useEffect(() => {
+    const checkSession = async () => {
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+      if (!session) {
+        navigate("/login");
+      } else {
+        setUser({
+          email: session.user.email,
+          team_number: session.user.user_metadata.team_number,
+          api_key: session.user.user_metadata.api_key,
+        });
+      }
+    };
+    checkSession();
+  }, []);
+
+  useEffect(() => {
     const fetchEvents = async () => {
       setIsLoadingEvents(true);
       try {
         const currentYear = new Date().getFullYear();
         const data = await fetchTBA(
-          `https://www.thebluealliance.com/api/v3/events/${currentYear}/simple`
+          `https://www.thebluealliance.com/api/v3/events/${currentYear}/simple`,
         );
 
         const options =
@@ -102,7 +128,7 @@ const NewEventPage = () => {
       const teamToMaxHopperSize = buildTeamToMaxHopperSize(allPitRows);
       setProcessedPitData(transformScoutingRows(allPitRows));
       setProcessedMatchData(
-        transformScoutingRows(allMatchRows, { teamToMaxHopperSize })
+        transformScoutingRows(allMatchRows, { teamToMaxHopperSize }),
       );
     };
 
@@ -112,22 +138,38 @@ const NewEventPage = () => {
   const isSubmitEnabled =
     !!selectedEvent && pitFiles?.length > 0 && matchFiles?.length > 0;
 
-  const handleSubmit = () => {
-    const combined = {
-      pitData: processedPitData,
-      matchData: processedMatchData,
+  const handleSubmit = async () => {
+    if (!selectedEvent || !user?.api_key) return;
+    const payload = {
+      eventKey: selectedEvent.key,
+      scoutedBy: [user.team_number],
+      data: {
+        pitData: processedPitData,
+        matchData: processedMatchData,
+      },
     };
-    const blob = new Blob([JSON.stringify(combined, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `event-data-${selectedEvent?.key ?? "export"}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+
+    try {
+      const response = await fetch("https://vrobohub-api.onrender.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          authorization: `Bearer ${user.api_key}`,
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API responded with status ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("Submission successful:", result);
+      alert("Event data submitted successfully!");
+    } catch (err) {
+      console.error("Failed to submit event data:", err);
+      alert("Failed to submit event data. Check console for details.");
+    }
   };
 
   return (
@@ -154,7 +196,12 @@ const NewEventPage = () => {
         }}
       >
         <Box textAlign="center">
-          <Typography variant="h5" component="h1" fontWeight="bold" gutterBottom>
+          <Typography
+            variant="h5"
+            component="h1"
+            fontWeight="bold"
+            gutterBottom
+          >
             Input the Following Data to Create an Event
           </Typography>
           <Typography variant="body2" color="text.secondary">
