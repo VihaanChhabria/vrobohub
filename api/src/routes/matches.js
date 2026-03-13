@@ -46,6 +46,7 @@ router.get("/", async (req, res) => {
     const combined = {
       event_key: event_key,
       created_at: rows[0].created_at,
+      scouted_by: rows.map((row) => row.scouted_by).flat(),
       data: {
         matchData: allMatches,
         pitData: allPitData,
