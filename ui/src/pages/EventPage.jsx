@@ -124,7 +124,7 @@ const EventPage = () => {
         console.log("Fetched scouting data:", data);
 
         await new Promise((resolve) => {
-          setScoutingData(data.data);
+          setScoutingData(data);
           setTimeout(resolve, 0);
         });
       } catch (error) {

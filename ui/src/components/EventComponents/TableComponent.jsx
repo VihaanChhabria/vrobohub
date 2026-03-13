@@ -90,10 +90,10 @@ const TableComponent = ({
           {tbaEventMatchesData.map((row) => {
             if (selectedTeams.length > 0) {
               const redTeams = row.red.filter((team) =>
-                selectedTeams.includes(`${team} - ${teamInfo[team] || ""}`)
+                selectedTeams.includes(`${team} - ${teamInfo[team] || ""}`),
               );
               const blueTeams = row.blue.filter((team) =>
-                selectedTeams.includes(`${team} - ${teamInfo[team] || ""}`)
+                selectedTeams.includes(`${team} - ${teamInfo[team] || ""}`),
               );
               if (redTeams.length === 0 && blueTeams.length === 0) {
                 return null; // Skip this row if no teams match the filter
@@ -181,10 +181,10 @@ const TableComponent = ({
                     // Find missing teams for this match
                     const missingTeams = [];
                     [...row.red, ...row.blue].forEach((team) => {
-                      const found = scoutingData.some((sd) => {
+                      const found = scoutingData.data.matchData.some((sd) => {
                         return (
-                          sd.match_number == row.match &&
-                          sd.team_number.toString() == team
+                          sd.matchNumber == row.match.replace(`qm`, "") &&
+                          sd.selectTeam.toString() == team.toString()
                         );
                       });
                       if (!found) {
@@ -194,11 +194,10 @@ const TableComponent = ({
 
                     const isFullyScouted = missingTeams.length === 0;
 
+                    
 
                     const tooltipText = isFullyScouted
-                      ? `All teams in match scouted by ${row.scouted_by.join(
-                          ", "
-                        )}`
+                      ? `All teams in match scouted by ${new Intl.ListFormat("en", { style: "long", type: "disjunction" }).format(scoutingData.scouted_by)}`
                       : `Missing: ${missingTeams.join(", ")}`;
 
                     return (
