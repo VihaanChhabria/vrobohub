@@ -20,6 +20,7 @@ import {
 } from "../utils/transformScoutingData";
 import { useNavigate } from "react-router-dom";
 import supabase from "../services/supabaseClient";
+import { toast } from "react-toastify";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -165,10 +166,11 @@ const NewEventPage = () => {
 
       const result = await response.json();
       console.log("Submission successful:", result);
-      alert("Event data submitted successfully!");
+      toast.success("Event data submitted successfully!");
+      navigate(`/event/${selectedEvent.key}`);
     } catch (err) {
       console.error("Failed to submit event data:", err);
-      alert("Failed to submit event data. Check console for details.");
+      toast.error("Failed to submit event data. Check console for details.");
     }
   };
 
