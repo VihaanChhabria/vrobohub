@@ -41,7 +41,7 @@ const EventPage = () => {
     const fetchMatches = async () => {
       try {
         const data = await fetchTBA(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`,
         );
 
         console.log("selectedMatches:", selectedMatches);
@@ -50,14 +50,15 @@ const EventPage = () => {
           .map((match) => ({
             match: match.key.replace(`${selectedEvent}_`, ""),
             red: match.alliances.red.team_keys.map((key) =>
-              key.replace("frc", "")
+              key.replace("frc", ""),
             ),
             blue: match.alliances.blue.team_keys.map((key) =>
-              key.replace("frc", "")
+              key.replace("frc", ""),
             ),
             redScore: match.alliances.red.score,
             blueScore: match.alliances.blue.score,
-            scouted_by: selectedMatches.filter((m) => m.match_key === match.key)
+            scouted_by: selectedMatches
+              .filter((m) => m.match_key === match.key)
               .map((m) => m.scouted_by)
               .flat(),
           }))
@@ -76,7 +77,7 @@ const EventPage = () => {
     const fetchTeamInfo = async () => {
       try {
         const data = await fetchTBA(
-          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/teams/simple`,
         );
 
         // Convert the response to the desired format
@@ -96,7 +97,7 @@ const EventPage = () => {
         const data = await fetchFromCache(
           "https://vrobohub-api.onrender.com/events",
           "https://vrobohub-api.onrender.com/events/last-updated",
-          false
+          false,
         );
         const event = data.find((event) => event.event_key === selectedEvent);
 
@@ -117,7 +118,7 @@ const EventPage = () => {
           false,
           {
             event_key: selectedEvent,
-          }
+          },
         );
 
         console.log("Fetched scouting data:", data);
@@ -144,7 +145,10 @@ const EventPage = () => {
   return (
     <div>
       <Box sx={{ p: 4 }}>
-        <EventInfoComponent matchDataLength={scoutingData.length} eventName={eventName} />
+        <EventInfoComponent
+          matchDataLength={scoutingData.length}
+          eventName={eventName}
+        />
         <FilterBarComponent
           eventKey={selectedEvent}
           tbaEventMatchesData={tbaEventMatchesData}
