@@ -34,21 +34,22 @@ router.get("/", async (req, res) => {
     // Merge all rows together
     // Flatten all matches and add scouted_by to each match in data
     const allMatches = [];
+    const allPitData = [];
 
     rows.forEach((row) => {
-      const matches = Array.isArray(row.data) ? row.data : [];
-      matches.forEach((match) => {
-        allMatches.push({
-          ...match,
-          scouted_by: row.scouted_by || [],
-        });
-      });
+      const matches = Array.isArray(row.data.matchData) ? row.data.matchData : [];
+      allMatches.push(...matches);
+      const pitData = Array.isArray(row.data.pitData) ? row.data.pitData : [];
+      allPitData.push(...pitData);
     });
 
     const combined = {
       event_key: event_key,
       created_at: rows[0].created_at,
-      data: allMatches,
+      data: {
+        matchData: allMatches,
+        pitData: allPitData,
+      },
     };
 
     return res.status(200).json(combined);
