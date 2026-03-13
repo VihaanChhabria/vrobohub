@@ -41,7 +41,7 @@ router.post("/", async (req, res) => {
   }
 
   res.status(201).json({
-    message: `${payload.data.matchData.length} matches and ${payload.data.pitData.length} pit teams submitted successfully for event ${payload.eventKey}`,
+    message: `${payload.data.matchData.length} matches and ${payload.data.pitData.length} pit teams submitted successfully for event ${payload.event_key}`,
   });
 });
 

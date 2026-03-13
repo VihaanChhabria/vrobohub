@@ -123,6 +123,6 @@
       "additionalProperties": false
     }
   },
-  "required": ["eventKey", "scoutedBy", "data"],
+  "required": ["event_key", "scouted_by", "data"],
   "additionalProperties": false
 }
