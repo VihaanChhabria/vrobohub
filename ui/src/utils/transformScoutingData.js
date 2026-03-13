@@ -198,6 +198,29 @@ const transformRow = (row, teamToMaxHopperSize = null) => {
 
   const result = { ...row };
 
+  // Coerce numeric-looking strings to numbers for known numeric fields
+  const numericFields = [
+    "teamNumber",
+    "weight",
+    "maxFuelStorage",
+    "matchNumber",
+    "selectTeam",
+    "climbTimeSeconds",
+    "playedDefenseOn",
+  ];
+
+  numericFields.forEach((field) => {
+    if (field in result) {
+      const value = result[field];
+      if (typeof value === "string" && value.trim() !== "") {
+        const n = Number(value);
+        if (!Number.isNaN(n)) {
+          result[field] = n;
+        }
+      }
+    }
+  });
+
   if ("autoRobotPositions" in row) {
     result.autoRobotPositions = transformAutoRobotPositions(
       row.autoRobotPositions,
