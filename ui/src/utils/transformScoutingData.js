@@ -61,12 +61,12 @@ const transformItemWithPercentage = (item, maxHopperSize) => {
 
   if (percentage == null) return item;
 
-  const fuelShot = Math.round(percentage * hopper * 100) / 100;
+  const fuelShotPercent = Math.round(percentage * 100) / 100;
   const { percentage: _p, hopperPercent: _h, shotsPercent: _s, ...rest } = item;
-  return { ...rest, fuelShot };
+  return { ...rest, fuelShotPercent };
 };
 
-/** Transform nested shotInfo { hopperPercent, shotsPercent } -> fuelShot. */
+/** Transform nested shotInfo { hopperPercent, shotsPercent } -> fuelShotPercent. */
 const transformShotInfo = (shotInfo, maxHopperSize) => {
   if (shotInfo == null || typeof shotInfo !== "object") return shotInfo;
   const hopper = maxHopperSize ?? DEFAULT_MAX_HOPPER_SIZE;
@@ -74,9 +74,9 @@ const transformShotInfo = (shotInfo, maxHopperSize) => {
   const shotsPct = parsePercentToDecimal(shotInfo.shotsPercent);
   const percentage = hopperPct ?? shotsPct ?? null;
   if (percentage == null) return shotInfo;
-  const fuelShot = Math.round(percentage * hopper * 100) / 100;
+  const fuelShotPercent = Math.round(percentage * 100) / 100;
   const { hopperPercent: _h, shotsPercent: _s, ...rest } = shotInfo;
-  return { ...rest, fuelShot };
+  return { ...rest, fuelShotPercent };
 };
 
 /**

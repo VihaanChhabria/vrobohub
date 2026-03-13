@@ -63,9 +63,9 @@
                     "shotInfo": {
                       "type": "object",
                       "properties": {
-                        "fuelShot": { "type": "number" }
+                        "fuelShotPercent": { "type": "number" }
                       },
-                      "required": ["fuelShot"],
+                      "required": ["fuelShotPercent"],
                       "additionalProperties": false
                     }
                   },
@@ -79,10 +79,10 @@
                   "type": "object",
                   "properties": {
                     "source": { "type": "string" },
-                    "fuelShot": { "type": "number" },
+                    "fuelShotPercent": { "type": "number" },
                     "timeSeconds": { "type": "number" }
                   },
-                  "required": ["source", "fuelShot", "timeSeconds"],
+                  "required": ["source", "fuelShotPercent", "timeSeconds"],
                   "additionalProperties": false
                 }
               },
