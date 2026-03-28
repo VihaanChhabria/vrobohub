@@ -61,13 +61,25 @@
                     "driveType": { "type": "string" },
                     "timeSeconds": { "type": "number" },
                     "shotInfo": {
-                      "type": "object",
-                      "properties": {
-                        "hopperPercent": { "type": "number" },
-                        "shotsPercent": { "type": "number" }
-                      },
-                      "required": ["hopperPercent", "shotsPercent"],
-                      "additionalProperties": false
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "fuelShotPercent": { "type": "number" }
+                          },
+                          "required": ["fuelShotPercent"],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "hopperPercent": { "type": ["number", "string"] },
+                            "shotsPercent": { "type": ["number", "string"] }
+                          },
+                          "required": ["hopperPercent", "shotsPercent"],
+                          "additionalProperties": false
+                        }
+                      ]
                     }
                   },
                   "required": ["x", "y", "driveType", "timeSeconds"],
@@ -77,20 +89,44 @@
               "fuelShotAndSourceInfo": {
                 "type": "array",
                 "items": {
-                  "type": "object",
-                  "properties": {
-                    "source": { "type": "string" },
-                    "hopperPercent": { "type": "number" },
-                    "shotsPercent": { "type": "number" },
-                    "timeSeconds": { "type": "number" }
-                  },
-                  "required": [
-                    "source",
-                    "hopperPercent",
-                    "shotsPercent",
-                    "timeSeconds"
-                  ],
-                  "additionalProperties": false
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "source": { "type": "string" },
+                        "timeSeconds": { "type": "number" },
+                        "fuelShotPercent": { "type": "number" }
+                      },
+                      "required": ["source", "timeSeconds", "fuelShotPercent"],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "source": { "type": "string" },
+                        "timeSeconds": { "type": "number" },
+                        "hopperPercent": { "type": ["number", "string"] },
+                        "shotsPercent": { "type": ["number", "string"] }
+                      },
+                      "required": [
+                        "source",
+                        "hopperPercent",
+                        "shotsPercent",
+                        "timeSeconds"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "source": { "type": "string" },
+                        "timeSeconds": { "type": "number" },
+                        "percentage": { "type": "number" }
+                      },
+                      "required": ["source", "timeSeconds", "percentage"],
+                      "additionalProperties": false
+                    }
+                  ]
                 }
               },
               "climbPosition": { "type": "string" },
