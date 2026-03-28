@@ -15,9 +15,9 @@
               "scouterInitials": { "type": "string" },
               "teamNumber": { "type": "number" },
               "drivetrainType": { "type": "string" },
-              "weight": { "type": "number" },
+              "weight": { "type": ["number", "string"] },
               "climbingAbility": { "type": "string" },
-              "maxFuelStorage": { "type": "number" },
+              "maxFuelStorage": { "type": ["number", "string"] },
               "trenchDriveAbility": { "type": "boolean" },
               "rotatableShooter": { "type": "boolean" },
               "intakeFromDepot": { "type": "boolean" },
@@ -63,9 +63,10 @@
                     "shotInfo": {
                       "type": "object",
                       "properties": {
-                        "fuelShotPercent": { "type": "number" }
+                        "hopperPercent": { "type": "number" },
+                        "shotsPercent": { "type": "number" }
                       },
-                      "required": ["fuelShotPercent"],
+                      "required": ["hopperPercent", "shotsPercent"],
                       "additionalProperties": false
                     }
                   },
@@ -79,10 +80,16 @@
                   "type": "object",
                   "properties": {
                     "source": { "type": "string" },
-                    "fuelShotPercent": { "type": "number" },
+                    "hopperPercent": { "type": "number" },
+                    "shotsPercent": { "type": "number" },
                     "timeSeconds": { "type": "number" }
                   },
-                  "required": ["source", "fuelShotPercent", "timeSeconds"],
+                  "required": [
+                    "source",
+                    "hopperPercent",
+                    "shotsPercent",
+                    "timeSeconds"
+                  ],
                   "additionalProperties": false
                 }
               },
@@ -95,7 +102,7 @@
               "playedDefense": { "type": "boolean" },
               "defenseTime": { "type": "string" },
               "defenseSkill": { "type": "string" },
-              "playedDefenseOn": { "type": "number" }
+              "playedDefenseOn": { "type": ["number", "string"] }
             },
             "required": [
               "matchNumber",

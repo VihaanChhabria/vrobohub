@@ -1,28 +1,22 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import EventInfoComponent from "../components/EventComponents/EventInfoComponent";
-import ViewModeToggle from "../components/EventAnalysisComponents/ViewModeToggle";
-import ToggleButtonGroup from "../components/EventAnalysisComponents/ToggleButtonGroup";
-import TeamSpecificAnalysis from "../components/EventAnalysisComponents/TeamSpecific/TeamSpecificAnalysis";
-import OverallBoxPlot from "../components/EventAnalysisComponents/Overall/OverallBoxPlot";
+import RebuiltTeamAnalytics from "../components/EventAnalysisComponents/TeamSpecific/RebuiltTeamAnalytics";
 import fetchFromCache from "../utils/fetchFromCache";
 import fetchTBA from "../utils/fetchTBA";
 import { toast } from "react-toastify";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 const EventAnalysisPage = () => {
   const { event_key: selectedEvent } = useParams();
 
   const [eventName, setEventName] = useState("");
-  const [viewMode, setViewMode] = useState("team-specific");
-  const [scoutingData, setScoutingData] = useState([]);
+  const [scoutingData, setScoutingData] = useState(null);
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [teamInfo, setTeamInfo] = useState({});
   const [availableTeams, setAvailableTeams] = useState([]);
   const [teamRecord, setTeamRecord] = useState({ wins: 0, losses: 0, ties: 0 });
-  const [selectedPeriods, setSelectedPeriods] = useState(["teleop", "auto"]);
-  const [selectedCategory, setSelectedCategory] = useState("L1");
-  const [sortBy, setSortBy] = useState("average");
+  const [tbaEventMatchesData, setTBAEventMatchesData] = useState([]);
   useEffect(() => {
     const fetchEventName = async () => {
       try {
@@ -53,11 +47,7 @@ const EventAnalysisPage = () => {
         );
 
         console.log("Fetched scouting data:", data);
-
-        await new Promise((resolve) => {
-          setScoutingData(data.data);
-          setTimeout(resolve, 0);
-        });
+        setScoutingData(data.data);
       } catch (error) {
         console.error("Failed to fetch scouting data:", error);
         toast.error("Failed to fetch scouting data");
@@ -82,32 +72,46 @@ const EventAnalysisPage = () => {
       }
     };
 
+    const fetchEventMatches = async () => {
+      try {
+        const data = await fetchTBA(
+          `https://www.thebluealliance.com/api/v3/event/${selectedEvent}/matches/simple`,
+        );
+
+        const formatted = data.map((match) => ({
+          key: match.key,
+          match: match.key.replace(`${selectedEvent}_`, ""),
+          red: match.alliances.red.team_keys.map((key) =>
+            Number(key.replace("frc", "")),
+          ),
+          blue: match.alliances.blue.team_keys.map((key) =>
+            Number(key.replace("frc", "")),
+          ),
+        }));
+
+        setTBAEventMatchesData(formatted);
+      } catch (error) {
+        console.error("Failed to fetch match data from TBA:", error);
+        toast.error("Failed to fetch match data from TBA");
+      }
+    };
+
     const fetchAllData = async () => {
       await fetchScoutingData();
       await fetchTeamInfo();
+      await fetchEventMatches();
     };
 
     fetchEventName();
     fetchAllData();
   }, [selectedEvent]);
 
-  // Update available teams when scouting data or team info changes
+  // Update available teams when team info changes
   useEffect(() => {
-    if (
-      scoutingData &&
-      scoutingData.length > 0 &&
-      Object.keys(teamInfo).length > 0
-    ) {
-      // Extract unique teams from scouting data
-      const teams = new Set();
-      scoutingData.forEach((match) => {
-        if (match.team_number) {
-          teams.add(match.team_number);
-        }
-      });
-
-      // format to "Team Number - Nickname"
-      const teamOptions = Array.from(teams)
+    if (Object.keys(teamInfo).length > 0) {
+      const teamOptions = Object.keys(teamInfo)
+        .map((num) => Number(num))
+        .filter((num) => !Number.isNaN(num))
         .sort((a, b) => a - b)
         .map((teamNum) => ({
           value: teamNum,
@@ -116,7 +120,7 @@ const EventAnalysisPage = () => {
 
       setAvailableTeams(teamOptions);
     }
-  }, [scoutingData, teamInfo]);
+  }, [teamInfo]);
 
   // Fetch team record from TBA API
   useEffect(() => {
@@ -152,72 +156,17 @@ const EventAnalysisPage = () => {
 
   return (
     <Box sx={{ p: 4 }}>
-      <EventInfoComponent eventName={eventName + " - Analysis"} />
-      <ViewModeToggle viewMode={viewMode} onViewModeChange={setViewMode} />
-      {viewMode === "team-specific" && (
-        <TeamSpecificAnalysis
-          selectedTeam={selectedTeam}
-          availableTeams={availableTeams}
-          onTeamChange={setSelectedTeam}
-          scoutingData={scoutingData}
-          teamRecord={teamRecord}
-          selectedEvent={selectedEvent}
-        />
-      )}
-      {viewMode === "overall" && (
-        <Box>
-          <ToggleButtonGroup
-            // allow empty array so user can deselect both periods
-            value={selectedPeriods}
-            onChange={setSelectedPeriods}
-            options={[
-              { value: "teleop", label: "Teleop", ariaLabel: "teleop" },
-              { value: "auto", label: "Auto", ariaLabel: "auto" },
-            ]}
-            exclusive={false}
-            ariaLabel="period selection"
-          />
-          <ToggleButtonGroup
-            value={selectedCategory}
-            onChange={setSelectedCategory}
-            options={[
-              { value: "L1", label: "L1", ariaLabel: "L1" },
-              { value: "L2", label: "L2", ariaLabel: "L2" },
-              { value: "L3", label: "L3", ariaLabel: "L3" },
-              { value: "L4", label: "L4", ariaLabel: "L4" },
-              {
-                value: "processor",
-                label: "Processor",
-                ariaLabel: "processor",
-              },
-              { value: "net_shot", label: "Net Shot", ariaLabel: "net shot" },
-            ]}
-            exclusive={true}
-            ariaLabel="category selection"
-          />
-          <ToggleButtonGroup
-            value={sortBy}
-            onChange={setSortBy}
-            options={[
-              { value: "average", label: "Average", ariaLabel: "average" },
-              { value: "median", label: "Median", ariaLabel: "median" },
-              { value: "min", label: "Min", ariaLabel: "min" },
-              { value: "max", label: "Max", ariaLabel: "max" },
-              { value: "q1", label: "Q1", ariaLabel: "quartile 1" },
-              { value: "q3", label: "Q3", ariaLabel: "quartile 3" },
-            ]}
-            exclusive={true}
-            ariaLabel="sort by selection"
-          />
-          <OverallBoxPlot
-            scoutingData={scoutingData}
-            teamInfo={teamInfo}
-            selectedPeriods={selectedPeriods}
-            selectedCategory={selectedCategory}
-            sortBy={sortBy}
-          />
-        </Box>
-      )}
+      <EventInfoComponent eventName={eventName + " - Rebuilt Analysis"} />
+      <RebuiltTeamAnalytics
+        selectedTeam={selectedTeam}
+        availableTeams={availableTeams}
+        onTeamChange={setSelectedTeam}
+        scoutingData={scoutingData}
+        teamRecord={teamRecord}
+        teamInfo={teamInfo}
+        tbaEventMatchesData={tbaEventMatchesData}
+        eventKey={selectedEvent}
+      />
     </Box>
   );
 };
